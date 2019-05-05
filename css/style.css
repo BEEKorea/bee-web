@@ -11,7 +11,7 @@
 *
 * ======================================================= */
 body {
-  font-family: 'Roboto', 'NotoSansKR', sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -48,7 +48,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: 'Roboto', 'NotoSansKR', sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .hcs-new-nav .hcs-prem  ul li a{
-  padding: 23px 10px;
+  padding: 0px 10px;
   color: #40434A !important;
   font-size: 15px !important; 
   font-family: 'Roboto-Light', sans-serif;
@@ -654,7 +654,7 @@ form label {
   color: #FA6400;
 }
 .feature-left h3 {
-  font-family: 'NotoSansKR-Medium', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 28pt;
   color: #FA6400;
 }
@@ -922,7 +922,7 @@ form label {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: 'Roboto', 'NotoSansKR', sans-serif;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 4px;
@@ -1750,7 +1750,7 @@ form label {
 }
 
 #hcs-new-nav-items {
-  font-family: "NotoSansKR-Medium", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 18px;
   color: #3F424A;
   /* float: right; */
@@ -1763,6 +1763,9 @@ form label {
   -o-transition: 0.5s;
   transition: 0.5s; */
 }
+#hcs-new-nav-items .dropdown-menu {
+  font-size: 16px;
+}
 
 @media screen and (max-width: 991px) {
   
@@ -1771,7 +1774,8 @@ form label {
   }
   
   #hcs-new-nav-items {
-    /* float: left; */
+    float: left;
+    width: 100%;
   }
 
   #hcs-new-nav-header{
@@ -1814,13 +1818,13 @@ form label {
   }
 
   #hcs-hero .flexslider .slider-text > .slider-text-inner h2 {
-    font-family: 'NotoSansKR-Bold', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 36px;
     margin: 20px auto;
     color: #fff;
   }
   #hcs-hero .flexslider .slider-text > .slider-text-inner p {
-    font-family: 'NotoSansKR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 18px;
     font-weight: 300;
     color: #fff;
@@ -1879,7 +1883,7 @@ form label {
 }
 
 .hcs-text-center {
-  font-family: 'NotoSansKR-Medium', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   text-align: center;
 }
@@ -1896,7 +1900,7 @@ form label {
 .gallery-container h1 {
   text-align: center;
   margin-top: 50px;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: bold;
 }
 
@@ -1971,16 +1975,17 @@ form label {
   position: static !important;
 }
 .dropdown-menu-large {
-  margin-left: 16px;
-  margin-right: 16px;
-  padding: 0px 3px;
+  padding: 20px 0px;
+  width: 80%;
+  
 }
 .dropdown-menu-large > li > ul {
-  padding: 10px;
+  padding: 2px;;
   margin: 0;
 }
 .dropdown-menu-large > li > ul > li {
   list-style: none;
+
 }
 .dropdown-menu-large > li > ul > li > a {
   display: block;
@@ -2021,6 +2026,8 @@ form label {
 }
 @media (max-width: 768px) {
   .dropdown-menu-large {
+    float: left !important;
+    width: 100% !important;
     margin-left: 0 ;
     margin-right: 0 ;
   }
@@ -2034,9 +2041,6 @@ form label {
     padding: 3px 15px !important;
   }
   
-  .hcs-new-nav {
-   
-  }
 
 }
 

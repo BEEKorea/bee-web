@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .hcs-new-nav .hcs-prem  ul li a{
   padding: 0px 10px;
   color: #40434A !important;
-  font-size: 15px !important; 
+  font-size: 16px !important; 
   font-family: 'Roboto Light', sans-serif;
 }
 
@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #hcs-new-nav-items {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #3F424A;
   /* float: right; */
 }
@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: 0.5s; */
 }
 #hcs-new-nav-items .dropdown-menu {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 991px) {
@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-right: 10px;
   }
   #hcs-new-nav-items > ul > li > a {
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px 14px;
   }
 
@@ -366,11 +366,12 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
   .hcs-new-nav #hcs-main-btn {
-    width: 170px;
+    width: 190px;
     height: 40px;
-    font-size: 16px;
+    font-size: 18px;
     padding: 0px 0;
     margin-bottom: 10px;
+    margin-left: 10px;
   }
 
   #hcs-hero .flexslider .slider-text {
@@ -424,10 +425,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .hcs-section .feature-left span {
   color: #FA6400;
-  font-size: 22px;
+  font-size: 24px;
 }
 .hcs-section .feature-left img {
-  margin: 2px;
+  margin: 10px;
   width: 76px;
   height: 24px;
 }
@@ -445,85 +446,13 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 0px;
   line-height: 1.5;
   color: #FA6400;
-  position: relative;
+  /* position: relative; */
 }
  
 
-
-.content-area .hcs-heading h2:before {
-  position: absolute;
-  bottom: 0;
-  content: "";
-  width: 50px;
-  /* margin-left: -25px; */
-  height: 2px; 
-  /* left: 50%; */
-   background: #FA6400;
-   
-} 
-
-.content-area .hcs-heading {
-  margin-top: 50px;
-  
-}
-
-.content-area .hcs-heading h2 {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 42px;
-  margin-bottom: 0px;
-  line-height: 1.5;
-  color: #4A4A4A;
-  position: relative;
-}
-
-.content-area p {
-  font-family: "Noto Sans KR Light", sans-serif;
-  padding-top: 32px;
-  font-size: 20px;
-  color: #4A4A4A;
-  font-weight: lighter;
-  
-}
-
-.content-area img{
-  display: block;
-  width: 70%;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 991px) {
-  .hcs-heading h2 {
-    font-size: 40px;
-  }
-
-  .content-area img{
-    width: 90%;
-  }
-}
-
-/* .hcs-heading h2:before {
-  position: absolute;
-  bottom: 0;
-  content: "";
-  width: 50px;
-  margin-left: -25px;
-  height: 2px;
-  left: 50%;
-  background: #FA6400;
-}
-.hcs-heading h2.hcs-left:before {
-  left: 0;
-  margin-left: 0;
-} */
-
-@media screen and (max-width: 991px) {
-  .hcs-heading p {
-    font-size: 18px;
-  }
-}
-
-
-/* :: 16.0 Breadcumb Area CSS */
+/*  
+ * Breadcumb Area
+ */
 .breadcrumb-area {
   position: relative;
   z-index: 10;
@@ -554,6 +483,104 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 13px;
   content: "\e92a"; 
 }
+
+/*
+ * Content Area 
+ */
+.content-area {
+  margin-bottom: 60px;
+}
+
+.content-area .hcs-heading h2:before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 50px;
+  /* margin-left: -25px; */
+  height: 2px; 
+  /* left: 50%; */
+  background: #FA6400;
+   
+} 
+
+.content-area .hcs-heading {
+  margin-top: 50px;
+}
+
+.content-area .hcs-heading h2 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 42px;
+  margin-bottom: 0px;
+  line-height: 1.5;
+  color: #4A4A4A;
+  position: relative;
+}
+
+.content-area .hcs-heading h3 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  line-height: 1.5;
+  color: #FA8A00;
+  position: relative;
+}
+
+.content-area p {
+  font-family: "Noto Sans KR Light", sans-serif;
+  padding-top: 32px;
+  font-size: 20px;
+  color: #4A4A4A;
+  font-weight: lighter;
+  
+}
+
+.content-area img{
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+  .breadcrumb-area .hcs-heading {
+    margin-top: 16px;
+  }
+
+  .breadcrumb-area .breadcrumb {
+    
+    padding-top: 0px;
+  }
+
+  .hcs-heading h2 {
+    font-size: 40px;
+  }
+
+  .content-area img{
+    width: 90%;
+  }
+}
+
+/* .hcs-heading h2:before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 50px;
+  margin-left: -25px;
+  height: 2px;
+  left: 50%;
+  background: #FA6400;
+}
+.hcs-heading h2.hcs-left:before {
+  left: 0;
+  margin-left: 0;
+} */
+
+@media screen and (max-width: 991px) {
+  .hcs-heading p {
+    font-size: 18px;
+  }
+}
+
 
 /* 
  * Video
@@ -625,7 +652,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #hcs-footer {
   background-color : #0E1D28;
   color : #6D7278;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -678,9 +705,6 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 5px 0;
 }
 
-.hcs-info .title {
-  font-weight: bold;
-}
 
 
 @media screen and (max-width: 991px) {
@@ -1218,17 +1242,19 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-.hcs-center {
+.hcs-imenu-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  min-height: 100px;
   /* padding-bottom: 20px; */
 }
 
-.hcs-text-center {
+.hcs-imenu-p {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
+  color: #000;
 }
 
 hr { 
@@ -1244,7 +1270,7 @@ hr {
 }
 
 .hcs-emphasis {
-  font-weight: bold;
+  font-family: 'Noto Sans KR Bold';
 }
 /* 
  * Icon Menu 
@@ -1386,7 +1412,7 @@ hr {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); */
   cursor: not-allowed;
 }
 
@@ -1394,7 +1420,7 @@ hr {
 .dropdown-menu-large .dropdown-header {
   padding-bottom: 10px;
   color: #428bca;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   
 }
@@ -1422,7 +1448,6 @@ hr {
   .dropdown-menu-large .dropdown-header {
     padding: 0px !important;
   }
-  
 }
 /*
  * Social Icons 

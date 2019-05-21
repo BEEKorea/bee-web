@@ -25,13 +25,14 @@
 
 @media only screen and (max-width: 767px) {
 	.dynamic-tabs-container .tabs-dropdown .dropdown-menu {
-		position: fixed;
+		 position: fixed;
 		top: 40px;
 		right: 20px;
-		bottom: 40px;
+		bottom: 100px;
 		left: 20px;
 		padding-top: 10px;
-		padding-bottom:10px;
+		padding-bottom:10px; 
+
 		overflow-y: scroll;
 	}	
 

@@ -426,7 +426,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .hcs-section .feature-left h3 {
   display: inline-block;
   color: #FA6400;
-  font-size: 248x;
+  font-size: 24x;
 }
 .hcs-section .feature-left img {
   display: inline-block;
@@ -445,7 +445,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .breadcrumb-area .hcs-heading h2 {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 42px;
+  font-size: 38px;
   margin-bottom: 0px;
   line-height: 1.5;
   color: #FA6400;
@@ -512,7 +512,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .content-area .hcs-heading h2 {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: 0px;
   line-height: 1.5;
   color: #4A4A4A;
@@ -536,6 +536,11 @@ h1, h2, h3, h4, h5, h6, figure {
   /* margin-left: 0px; */
 }
 
+.content-area .empty-cover, .content-area .book-cover img {
+  border-radius: 5px;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+}
 .content-area .empty-cover {
   background: #eee;
   width: 140px;
@@ -629,7 +634,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
   .content-area .empty-cover {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -1319,7 +1324,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .hcs-table td {
-  font-size: 18px;
+  font-size: 16px;
   padding: 12px 0px !important;
 }
 
@@ -1419,6 +1424,10 @@ hr {
         
 /* :: 3.1.0 Spacing */
 
+.mt-0 {
+  margin-top: 0px !important;
+}
+
 .mt-15 {
   margin-top: 15px !important; }
 
@@ -1433,6 +1442,9 @@ hr {
 
 .mt-100 {
   margin-top: 100px !important; }
+
+.mb-0 {
+    margin-bottom: 0px !important; }
 
 .mb-15 {
   margin-bottom: 15px !important; }
@@ -1690,7 +1702,7 @@ hr {
 }
 .megamenu .dropdown-header {
   color: #428bca;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 16px;
 }
 
@@ -1922,3 +1934,31 @@ hr {
 .accordion-2b .panel-heading,
 .accordion-3 .panel-heading { cursor: pointer; }
 .d-accordion .panel-heading.collapsed .fa-chevron-up:before { content: '\f078'; }
+
+
+.about-us-content {
+  text-align: center;
+  position: relative;
+  z-index: 1; }
+  .about-us-content .book-cover {
+    margin: 0 auto;
+    margin-bottom: 30px; }
+   
+  .about-us-content h3 {
+    /* font-weight: 600; */
+    /* margin-bottom: 15px; */
+    color: #4A4A4A;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; 
+  }
+    
+  .about-us-content a {
+    font-weight: 700;
+    color: #959595; }
+
+    .about-us-content  a:hover, .about-us-content  a:focus {
+      color: #FA6400; }
+      .about-us-content a:hover i, .about-us-content  a:focus i {
+        padding-left: 5px; }
+  .about-us-content:hover  h3 {
+    color: #FA6400; }

@@ -46,8 +46,15 @@
 
 .hcs-responsive-row.header {
   /* color: #000000; */
-  background: #37BEB7;
+  background: #0E5072;
   /* background: #428bca; */
+}
+
+.hcs-responsive-row.notice {
+  font-family: 'Noto Sans KR-Bold', 'Noto Sans KR', sans-serif;
+  /* font-weight: bold; */
+  /* background: #f2f2f2; */
+  background: #F4F5FA;
 }
 
 @media screen and (max-width: 768px) {
@@ -67,7 +74,7 @@
   .hcs-responsive-row .cell:before {
     /* font-family: Poppins-Bold; */
     font-size: 12px;
-    color: #808080;
+    color: #0E5072;
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: unset !important;
@@ -141,7 +148,7 @@
 }
 
 .hcs-responsive-row.header:hover {
-  background-color: #37BEB7 !important;
+  background-color: #0E5072 !important;
 }
 
 @media (max-width: 768px) {

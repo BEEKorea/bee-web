@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .hcs-new-nav #hcs-main-btn {
-  width: 218px;
+  width: 228px;
   height: 70px;
   background-color: #FA6400;
   color: #fff;
@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 20px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1133px) {
   
   .hcs-page {
     padding-right: 10px;
@@ -341,37 +341,33 @@ h1, h2, h3, h4, h5, h6, figure {
   
   .hcs-new-nav {
     padding: 0px 0;
+    
   }
   
-  #hcs-new-nav-items {
-    float: left;
-    width: 100%;
+  .megamenu> li .dropdown-header , .megamenu> li > ul {
+    font-size: 14px !important;
   }
 
-  #hcs-new-nav-header{
-    margin-right: 10px;
-  }
   #hcs-new-nav-items > ul > li > a {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 14px;
   }
 
   .hcs-new-nav #hcs-logo {
-    padding-top: 7px;
+    padding-top: 0px;
   }
 
   .hcs-new-nav #hcs-logo img{
-    width: 190px;
-    height: 33px;
+    width: 170px;
+    height: 31px;
   }
 
   .hcs-new-nav #hcs-main-btn {
-    width: 190px;
+    width: 200px;
     height: 40px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0px 0;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    /* margin-right: 0px !important; */
   }
 
   #hcs-hero .flexslider .slider-text {
@@ -611,11 +607,11 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .content-area img{
   display: block;
-  width: 70%;
-  margin: 0 auto;
+  width: 60%;
+  /* margin: 0 auto; */
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1133px) {
   .breadcrumb-area .hcs-heading {
     margin-top: 16px;
   }
@@ -630,7 +626,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 
   .content-area img{
-    width: 90%;
+    width: 20%;
   }
 
   .content-area .empty-cover {
@@ -653,7 +649,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: 0;
 } */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1133px) {
   .hcs-heading p {
     font-size: 18px;
   }
@@ -785,7 +781,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1133px) {
   #hcs-footer .hcs-banners{
     text-align: left;
     padding: 0px;
@@ -815,7 +811,7 @@ h1, h2, h3, h4, h5, h6, figure {
   clear: both;
   position: relative;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1133px) {
   #hcs-footer,
   #hcs-faq,
   .hcs-section {
@@ -833,11 +829,16 @@ h1, h2, h3, h4, h5, h6, figure {
 /*
  * FAQ 
  */
+
  #hcs-faq {
   padding-top: 2em;
   position: relative;  
   background: #efefef;
 }
+.hcs-tab-area {
+  margin-bottom: 40px;
+}
+
 .hcs-accordion {
   position: relative;
   background: #fff;
@@ -847,17 +848,25 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 20px;
   position: relative;
   cursor: pointer;
+  font-family: 'Noto Sans KR Light', sans-serif;
+  font-size: 18x;
 }
 .hcs-accordion .hcs-accordion-heading h3 {
   margin: 0;
-  padding: 0;
-  font-size: 18px;
-  color: #brand-primary;
+  padding-left: 50px;
+  color: #777b7e;
+
+  /* color: #brand-primary; */
 }
+
+.hcs-accordion .hcs-accordion-heading h3:hover, .hcs-accordion .hcs-accordion-heading h3:focus {
+  color: #FA6400 !important; 
+}
+
 .hcs-accordion .hcs-accordion-heading .icon {
   position: absolute;
   top: 15px;
-  right: 20px;
+  left: 20px;
   font-size: 18px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -873,6 +882,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .hcs-accordion .hcs-accordion-content .inner {
   padding: 20px;
+}
+
+.hcs-accordion .hcs-accordion-content .inner ul li {
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
 }
 .hcs-accordion.active .icon {
   -webkit-transform: rotate(0deg);
@@ -1417,7 +1432,7 @@ hr {
     height: 530px;
     border: none;
     margin-bottom: 0; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 960px) {
       .map-area iframe {
         height: 300px; } }
 
@@ -1427,6 +1442,9 @@ hr {
 .mt-0 {
   margin-top: 0px !important;
 }
+
+.mt-10 {
+  margin-top: 10px !important; }
 
 .mt-15 {
   margin-top: 15px !important; }
@@ -1489,17 +1507,17 @@ hr {
   .section-heading h2 {
     font-size: 36px;
     text-transform: uppercase; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
+    @media only screen and (min-width: 960px) and (max-width: 1133px) {
       .section-heading h2 {
         font-size: 30px; } }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 960px) {
       .section-heading h2 {
         font-size: 24px; } }
   .section-heading p {
     font-size: 16px;
     color: #636363;
     margin-bottom: 0; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 960px) {
       .section-heading p {
         font-size: 14px; } }
   .section-heading.white h2,
@@ -1519,7 +1537,7 @@ hr {
     position: relative;
     z-index: 2;
     text-align: center; }
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1133px) {
       .contact-content-area .contact-content {
         margin-bottom: 50px; } }
     
@@ -1538,7 +1556,7 @@ hr {
       right: -15px;
       top: 0;
       z-index: 10; }
-      @media only screen and (max-width: 991) {
+      @media only screen and (max-width: 1133px) {
         .contact-content-area .contact-content::after {
           display: none; } }
   .contact-content-area .col-12:last-child .contact-content::after {
@@ -1640,7 +1658,7 @@ hr {
   background-color: transparent !important;
 }
 
-@media(max-width: 991px) {
+@media(max-width: 1133px) {
   body {
       padding: 0;
   }
@@ -1712,11 +1730,52 @@ hr {
 #hcs-new-nav-items .navbar-nav {
   float: right !important;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 760px) {
   #hcs-new-nav-items .navbar-nav {
     float: left !important;
     width: 100%;
   }
+  
+  .hcs-tab-area h2, .hcs-tab-area h3 {
+    /* padding: 20px; */
+    position: relative;
+    cursor: pointer;
+    font-family: 'Noto Sans KR Light', sans-serif;
+    font-size: 22px !important;
+   
+  }
+
+  .hcs-accordion .hcs-accordion-heading {
+    padding: 0px;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Noto Sans KR Light', sans-serif;
+    font-size: 18x !important;
+  }
+ 
+
+  .hcs-accordion .hcs-accordion-heading .icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 18px;
+  }
+
+  .hcs-accordion .hcs-accordion-content {
+    /* border-top: 1px solid #e6e6e6;
+    display: none; */
+    margin-top:20px;
+    
+  }
+  .hcs-accordion .hcs-accordion-content .inner {
+    padding: 20px;
+  }
+
+}
+
+@media  (min-width: 760px) and (max-width: 960px) {
+
   .megamenu{
     width: 100% !important;
     margin-left: 0 ;
@@ -1733,6 +1792,11 @@ hr {
   .megamenu .dropdown-header {
     padding: 3px 10px 10px 0 !important;
   }
+
+  .megamenu .dropdown-header.empty-header {
+    display: none;
+  }
+
   .megamenu > li > ul > li > a {
     padding: 2px;
   }
@@ -1837,7 +1901,7 @@ hr {
   color: #fff;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1133px) {
   .owl-theme .owl-controls .owl-nav {
     display: none;
   }
@@ -1892,8 +1956,13 @@ hr {
 /*
  * Accordion
  */
+.content-area .hcs-tab-area ul li{
+  font-size: 22px;
+} 
+
  .hcs-accordion {
-   margin-top: 48px;
+   margin-top: 20px;
+   
  }
 .hcs-accordion .panel-body {
   /* min-height: 20px !important; */
@@ -1902,6 +1971,10 @@ hr {
 
 .hcs-accordion .panel-title {
   font-size: 20px;
+}
+
+.content-area .hcs-accordion p {
+  margin: 0 auto;
 }
 
 .btn, .btn:hover, .btn:focus, .btn:active, .btn:active:focus { outline: 0; }
@@ -1962,3 +2035,88 @@ hr {
         padding-left: 5px; }
   .about-us-content:hover  h3 {
     color: #FA6400; }
+
+/* :: 10.0 Sermons Area CSS */
+.single-latest-sermons {
+  position: relative;
+  z-index: 1; }
+  .single-latest-sermons .sermons-thumbnail {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 5px; }
+    .single-latest-sermons .sermons-thumbnail img {
+      border-radius: 5px; }
+    .single-latest-sermons .sermons-thumbnail .sermons-date {
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms;
+      box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+      position: absolute;
+      left: 20px;
+      bottom: -15px;
+      background-color: #ffffff; }
+      @media only screen and (max-width: 960px) {
+        .single-latest-sermons .sermons-thumbnail .sermons-date {
+          width: 60px;
+          height: 60px; } }
+      .single-latest-sermons .sermons-thumbnail .sermons-date h6 {
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 600;
+        color: #636363; }
+        .single-latest-sermons .sermons-thumbnail .sermons-date h6 span {
+          -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+          display: block;
+          font-size: 36px;
+          font-weight: 700;
+          color: #1f1f2c; }
+          @media only screen and (min-width: 960px) and (max-width: 1133px) {
+            .single-latest-sermons .sermons-thumbnail .sermons-date h6 span {
+              font-size: 30px; } }
+          @media only screen and (max-width: 960px) {
+            .single-latest-sermons .sermons-thumbnail .sermons-date h6 span {
+              font-size: 24px; } }
+  .single-latest-sermons .sermons-content {
+    position: relative;
+    z-index: 1;
+    margin-top: 40px; }
+    .single-latest-sermons .sermons-content .sermons-cata {
+      margin-bottom: 15px; }
+      .single-latest-sermons .sermons-content .sermons-cata a {
+        color: #959595;
+        display: inline-block;
+        margin-right: 20px; }
+        .single-latest-sermons .sermons-content .sermons-cata a:hover {
+          color: #c92f2f; }
+    .single-latest-sermons .sermons-content h4 {
+      font-size: 24px;
+      font-weight: 600;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 20px;
+      margin-bottom: 0; }
+    .single-latest-sermons .sermons-content .sermons-meta-data {
+      margin-top: 20px; }
+      .single-latest-sermons .sermons-content .sermons-meta-data p {
+        margin-bottom: 5px;
+        color: #959595; }
+        .single-latest-sermons .sermons-content .sermons-meta-data p:last-child {
+          margin-bottom: 0; }
+        .single-latest-sermons .sermons-content .sermons-meta-data p i {
+          width: 15px;
+          color: #c92f2f; }
+        .single-latest-sermons .sermons-content .sermons-meta-data p span {
+          font-style: italic;
+          color: #636363; }
+  .single-latest-sermons:hover .sermons-thumbnail .sermons-date {
+    bottom: 20px;
+    background-color: #c92f2f; }
+    .single-latest-sermons:hover .sermons-thumbnail .sermons-date h6 {
+      color: #ffffff; }
+      .single-latest-sermons:hover .sermons-thumbnail .sermons-date h6 span {
+        color: #ffffff; }

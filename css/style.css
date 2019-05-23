@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .hcs-container {
-  max-width: 1280px;
+  max-width: 1250px;
   position: relative;
   margin: 0 auto;
   padding-left: 15px;
@@ -728,6 +728,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color : #6D7278;
   font-size: 20px;
   text-align: center;
+  padding-left: 30px !important;
 }
 
 #hcs-footer .hcs-banners-title {
@@ -765,7 +766,7 @@ h1, h2, h3, h4, h5, h6, figure {
   min-height: 225px;
   color: #fff;
   /* font-weight: lighter; */
-  padding: 66px 0;
+  padding: 66px 0px;
   text-align: left;
   font-size: 16px;
   /* letter-spacing: 0.5px; */
@@ -845,7 +846,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 20px;
 }
 .hcs-accordion .hcs-accordion-heading {
-  padding: 20px;
+  padding: 10px;
   position: relative;
   cursor: pointer;
   font-family: 'Noto Sans KR Light', sans-serif;
@@ -1607,11 +1608,14 @@ hr {
 
 .tz-gallery {
   /* padding: 40px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 .tz-gallery .row > div {
-  padding: 2px;
+  padding: 0px;
 }
 
 .tz-gallery .lightbox img {
@@ -1960,13 +1964,18 @@ hr {
   font-size: 22px;
 } 
 
- .hcs-accordion {
-   margin-top: 20px;
-   
- }
+.hcs-accordion {
+  margin-top: 20px;
+  
+}
+
+.hcs-accordion .panel {
+  margin-top: 20px !important;
+}
+
 .hcs-accordion .panel-body {
   /* min-height: 20px !important; */
-  padding: 0 10px;
+  padding: 10px 20px;
 }
 
 .hcs-accordion .panel-title {

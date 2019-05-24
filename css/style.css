@@ -611,6 +611,13 @@ h1, h2, h3, h4, h5, h6, figure {
   /* margin: 0 auto; */
 }
 
+
+.content-area img.center{
+  /* display: block;
+  width: 60%; */
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 1133px) {
   .breadcrumb-area .hcs-heading {
     margin-top: 16px;
@@ -866,7 +873,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .hcs-accordion .hcs-accordion-heading .icon {
   position: absolute;
-  top: 15px;
+  top: 8px;
   left: 20px;
   font-size: 18px;
   -webkit-transition: 0.3s;

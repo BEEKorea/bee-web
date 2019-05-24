@@ -82,6 +82,9 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 auto;
 }
 
+.hcs-page .cell {
+  height: 400px;
+}
 /* 
  * Navigation
   */
@@ -2101,6 +2104,7 @@ hr {
     color: #4A4A4A;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms; 
+   
   }
     
   .about-us-content a {
@@ -2127,6 +2131,10 @@ hr {
  .single-latest-sermons .sermons-content .sermons-meta-data {
    margin-top: 0px !important;
   }
+ }
+
+ .about-us-content h3 {
+  font-size: 20px;
  }
 
   .single-latest-sermons .sermons-thumbnail {

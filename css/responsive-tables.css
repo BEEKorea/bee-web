@@ -86,12 +86,12 @@
   }
 }
 
-.cell {
+.hcs-responsive-row .cell {
   display: table-cell;
 }
 
 @media screen and (max-width: 768px) {
-  .cell {
+  .hcs-responsive-row .cell {
     display: block;
   }
 }
@@ -178,7 +178,7 @@
     font-weight: unset !important;
   }
 
-  .hcs-responsive-table, .hcs-responsive-row, .cell {
+  .hcs-responsive-table, .hcs-responsive-row, .hcs-responsive-row  .cell {
     width: 100% !important;
   }
 }

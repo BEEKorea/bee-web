@@ -626,6 +626,8 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 auto;
 }
 
+
+
 @media screen and (max-width: 1133px) {
   .breadcrumb-area .hcs-heading {
     margin-top: 16px;
@@ -1801,6 +1803,10 @@ hr {
     font-size: 8px;
   }
 
+  .breadcrumb-area hr {
+    margin-top: 10px;
+  }
+
   .hcs-tab-area h2, .hcs-tab-area h3 {
     /* padding: 20px; */
     position: relative;
@@ -2111,7 +2117,18 @@ hr {
 /* :: 10.0 Sermons Area CSS */
 .single-latest-sermons {
   position: relative;
-  z-index: 1; }
+  z-index: 1; 
+  margin-top: 70px;
+}
+@media only screen and (max-width: 960px) {
+  .single-latest-sermons {
+    margin-top: 40px; 
+  }
+ .single-latest-sermons .sermons-content .sermons-meta-data {
+   margin-top: 0px !important;
+  }
+ }
+
   .single-latest-sermons .sermons-thumbnail {
     position: relative;
     z-index: 1;
@@ -2153,7 +2170,9 @@ hr {
               font-size: 30px; } }
           @media only screen and (max-width: 960px) {
             .single-latest-sermons .sermons-thumbnail .sermons-date h6 span {
-              font-size: 24px; } }
+              font-size: 24px; 
+              
+            } }
   .single-latest-sermons .sermons-content {
     position: relative;
     z-index: 1;
@@ -2168,12 +2187,12 @@ hr {
           color: #c92f2f; }
     .single-latest-sermons .sermons-content h4 {
       font-size: 24px;
-      font-weight: 600;
+      /* font-weight: 600; */
       border-bottom: 1px solid #e5e5e5;
       padding-bottom: 20px;
       margin-bottom: 0; }
     .single-latest-sermons .sermons-content .sermons-meta-data {
-      margin-top: 20px; }
+      margin-top: 10px; }
       .single-latest-sermons .sermons-content .sermons-meta-data p {
         margin-bottom: 5px;
         color: #959595; }

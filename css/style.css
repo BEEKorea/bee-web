@@ -147,8 +147,8 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-right: 20px;
 }
 
-.hcs-new-nav .hcs-prem  ul li a{
-  padding: 0px 10px;
+.hcs-new-nav .hcs-prem  ul li, .hcs-new-nav .hcs-prem  ul li a{
+  /* padding: 0px 10px; */
   color: #40434A !important;
   font-size: 16px !important; 
   font-family: 'Roboto Light', sans-serif;
@@ -390,17 +390,21 @@ h1, h2, h3, h4, h5, h6, figure {
 
   #hcs-hero .flexslider .slider-text > .slider-text-inner h2 {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 36px;
+    font-size: 30px;
     margin: 20px auto;
     color: #fff;
   }
   #hcs-hero .flexslider .slider-text > .slider-text-inner p {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     color: #fff;
     width: 50%;
     margin: 20px auto;
+  }
+
+  #hcs-hero .btn {
+    font-size: 20px;
   }
 }
 #hcs-hero .flexslider .slider-text > .slider-text-inner .hcs-lead {
@@ -823,7 +827,7 @@ h1, h2, h3, h4, h5, h6, figure {
   #hcs-footer,
   #hcs-faq,
   .hcs-section {
-    padding: 3em 0;
+    /* padding: 3em 0; */
   }
 }
 
@@ -1743,6 +1747,14 @@ hr {
 }
 
 @media (max-width: 760px) {
+  .hcs-new-nav .hcs-prem  ul li, .hcs-new-nav .hcs-prem  ul li a{
+    padding: 0px 5px;
+    color: #40434A !important;
+    font-size: 14px !important; 
+    font-family: 'Roboto Light', sans-serif;
+  }
+
+
   #hcs-new-nav-items .navbar-nav {
     float: left !important;
     width: 100%;

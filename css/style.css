@@ -13,7 +13,7 @@
 body {
   font-family: 'Noto Sans KR', 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7;
   color: #777;
   background: #fff;
@@ -435,6 +435,13 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #FA6400;
   font-size: 24x;
 }
+
+.hcs-section .feature-left-blue h3 {
+  display: inline-block;
+  color: #0E5072;
+  font-size: 24x;
+}
+
 .hcs-section .feature-left img {
   display: inline-block;
   margin-right: 20px;
@@ -1197,7 +1204,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .hcs-card-item {
   display: block;
-  width: 100%;
+  /* width: 30%; */
+  /* height: 300px; */
   position: relative;
   overflow: hidden;
   z-index: 9;
@@ -1208,10 +1216,10 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
   -o-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-  -webkit-border-radius: 10px;
+  /* -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
-  border-radius: 10px;
+  border-radius: 10px; */
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1347,14 +1355,19 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .notices {
-  padding: 10px;
-
+  /* padding: 10px; */
+  /* width: 90%; */
+  /* height: 300px; */
+  padding: 30px 20px 20px 20px;
+  margin-bottom: 0;
+  /* background-color: #eee; */
+  /* margin-right: 10px; */
 }
 
-.hcs-table td {
+/* .hcs-table td {
   font-size: 16px;
   padding: 12px 0px !important;
-}
+} */
 
 
 .hcs-imenu-img {
@@ -2219,3 +2232,22 @@ hr {
       color: #ffffff; }
       .single-latest-sermons:hover .sermons-thumbnail .sermons-date h6 span {
         color: #ffffff; }
+
+
+  
+/* tagline */
+
+.tagline {
+  background: #f8f8f8;
+  border-top: 5px solid #0E5072;
+}
+
+.hcs-cards .col-md-4 {
+  width: 37%;
+  margin: 5px;
+}
+
+.hcs-cards .col-md-3 {
+  width: 30%;
+  margin: 5px;
+}

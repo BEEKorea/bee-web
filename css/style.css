@@ -436,9 +436,9 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 24x;
 }
 
-.hcs-section .feature-left-blue h3 {
+.hcs-section .feature-left-strong h3 {
   display: inline-block;
-  color: #0E5072;
+  color: #FA6400;
   font-size: 24x;
 }
 
@@ -2239,7 +2239,7 @@ hr {
 
 .tagline {
   background: #f8f8f8;
-  border-top: 5px solid #0E5072;
+  border-top: 5px solid #FA6400;
 }
 
 .hcs-cards .col-md-4 {

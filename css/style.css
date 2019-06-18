@@ -13,7 +13,7 @@
 body {
   font-family: 'Noto Sans KR', 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7;
   color: #777;
   background: #fff;
@@ -411,6 +411,17 @@ h1, h2, h3, h4, h5, h6, figure {
   #hcs-hero .btn.btn-primary {
     font-size: 20px;
     padding: 10px 30px !important;
+  }
+
+
+  .hcs-cards .col-md-4 {
+    width: 100% !important;
+    margin: 0px !important; 
+  }
+
+  .hcs-cards .col-md-3 {
+    width: 100% !important;
+    margin: 0px !important; 
   }
 
 }

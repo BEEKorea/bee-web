@@ -2250,12 +2250,12 @@ hr {
 
 .tagline-strong {
   background: #f8f8f8;
-  border-top: 5px solid #FA6400;
+  /* border-top: 5px solid #FA6400; */
 }
 
 .tagline {
   background: #ffffff;
-  border-top: 5px solid #999999;
+  /* border-top: 5px solid #BAC3CD; */
 }
 
 .hcs-cards .col-md-4 {

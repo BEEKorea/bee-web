@@ -2245,17 +2245,17 @@ hr {
         color: #ffffff; }
 
 
-  
+
 /* tagline */
 
 .tagline-strong {
-  background: #f8f8f8;
-  /* border-top: 5px solid #FA6400; */
+  background: #f8f9fa;
+  border-bottom: 2px solid #FA6400;
 }
 
 .tagline {
   background: #ffffff;
-  /* border-top: 5px solid #BAC3CD; */
+  border-bottom: 2px solid #BAC3CD;
 }
 
 .hcs-cards .col-md-4 {

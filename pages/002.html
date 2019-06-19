@@ -26,7 +26,15 @@
 	<link rel="stylesheet" href="../css/flexslider.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="../css/style.css">
+	<!-- jQuery -->
+	<script src="../js/jquery.min.js"></script>
+		
 
+	<script type="text/javascript">
+		$(document).ready( function() {
+			$("#hcs-nav").load("/nav.html");
+		});
+	</script>
 	
 	<!-- Modernizr JS -->
 	<script src="../js/modernizr-2.6.2.min.js"></script>
@@ -42,7 +50,7 @@
 	<div class="hcs-loader"></div>
 
 	<div id="page">
-		<div id="hcs-nav-menu"></div>
+		<div id="hcs-nav"></div>
 
         <div class="breadcrumb-area">
             <div class="hcs-container">

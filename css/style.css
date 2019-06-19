@@ -1216,7 +1216,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .hcs-card-item {
   display: block;
   /* width: 30%; */
-  /* height: 300px; */
+  height: 300px;
   position: relative;
   overflow: hidden;
   z-index: 9;
@@ -2248,9 +2248,14 @@ hr {
   
 /* tagline */
 
-.tagline {
+.tagline-strong {
   background: #f8f8f8;
   border-top: 5px solid #FA6400;
+}
+
+.tagline {
+  background: #ffffff;
+  border-top: 5px solid #999999;
 }
 
 .hcs-cards .col-md-4 {
@@ -2423,6 +2428,6 @@ ul.the-icons {
 }
 
 .hcs-table .main{
-  font-size: 20px;
+  font-size: 18px;
   color: #FA6400;
 }

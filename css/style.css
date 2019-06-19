@@ -140,7 +140,6 @@ h1, h2, h3, h4, h5, h6, figure {
   background-color: #fff !important;
 }
 
-
 .hcs-new-nav .hcs-prem {
   margin-right: 20px;
 }
@@ -156,17 +155,14 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #40434A !important;
 }
 
-
 .feature-left {
-  /* float: left; */
-  /* width: 100%; */
   position: relative;
   padding-bottom: 14px;
 }
 
 
 #hcs-hero {
-  background: #fff url(../images/loader.gif) no-repeat center center;
+  background: #fff url(/images/loader.gif) no-repeat center center;
 }
 #hcs-hero .btn {
   font-size: 24px;
@@ -182,19 +178,15 @@ h1, h2, h3, h4, h5, h6, figure {
 #hcs-hero .flexslider .slides {
   position: relative;
   overflow: hidden;
-  
 }
 
 #hcs-hero .flexslider .slides li {
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  /* background-position: top left; */
-  /* margin-top:40px; */
-  /* width: 1440px; */
   max-height: 400px; 
-
 }
+
 #hcs-hero .flexslider .slides li .overlay {
   position: absolute;
   top: 0;

@@ -699,6 +699,7 @@ h1, h2, h3, h4, h5, h6, figure {
   cursor: pointer;
   font-family: 'Noto Sans KR Light', sans-serif;
   font-size: 18x;
+  margin-bottom: 10px;
 }
 .hcs-accordion .hcs-accordion-heading h3 {
   margin: 0;
@@ -754,8 +755,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .hcs-accordion.active .hcs-accordion-content ul {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  margin: 0px;
 }
 
 .hcs-accordion i {
@@ -2023,7 +2023,6 @@ ul.the-icons {
     cursor: pointer;
     font-family: 'Noto Sans KR Light', sans-serif;
     font-size: 18x !important;
-    margin-bottom: 10px;
   }
  
 
@@ -2042,6 +2041,7 @@ ul.the-icons {
   }
   .hcs-accordion .hcs-accordion-content .inner {
     padding: 20px;
+    font-size: 18px;
   }
 
   .megamenu{

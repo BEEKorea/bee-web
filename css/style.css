@@ -680,7 +680,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-top: 2em;
   position: relative;  
   background: #efefef;
-  font-size: 18px;
+  font-size: 20px;;
 }
 
 .hcs-tab-area {
@@ -705,7 +705,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding-left: 50px;
   color: #777b7e;
-  font-size: 18px;
+  font-size: 20px;;
 }
 
 .hcs-accordion .hcs-accordion-heading h3:hover, .hcs-accordion .hcs-accordion-heading h3:focus {
@@ -736,7 +736,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .hcs-accordion .hcs-accordion-content .inner ul li {
   padding: 0px;
   margin: 0px;
-  font-size: 18px;
+  font-size: 20px;;
 }
 .hcs-accordion.active .icon {
   -webkit-transform: rotate(0deg);
@@ -745,7 +745,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: rotate(0deg);
 }
 .hcs-accordion.active h3 {
-  font-size: 18px;
+  font-size: 20px;;
   color: #FA6400;
 }
 
@@ -763,7 +763,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 16px;
 }
 .content-area .hcs-tab-area ul li{
-  font-size: 18px;
+  font-size: 20px;
 } 
 
 .hcs-accordion .panel {
@@ -776,12 +776,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .hcs-accordion .panel-title {
-  font-size: 18px;
+  font-size: 20px;;
 }
 
 .content-area .hcs-accordion p {
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 20px;;
 }
 
 .i-accordion .panel-heading,
@@ -1115,7 +1115,7 @@ hr {
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 54px;
-  font-size: 18px;
+  font-size: 20px;;
   font-weight: 300;
 }
 .form-control:active, .form-control:focus {

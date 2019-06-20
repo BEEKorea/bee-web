@@ -751,20 +751,20 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 16px;
 }
 .content-area .hcs-tab-area ul li{
-  font-size: 22px;
+  font-size: 20px;
 } 
 
 .hcs-accordion .panel {
-  margin-top: 20px !important;
+  margin-top: 18px !important;
 }
 
 .hcs-accordion .panel-body {
   /* min-height: 20px !important; */
-  padding: 10px 20px;
+  padding: 10px 16px;
 }
 
 .hcs-accordion .panel-title {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .content-area .hcs-accordion p {

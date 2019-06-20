@@ -1316,9 +1316,10 @@ hr {
 	/* padding: 12px 14px 14px 14px !important; */
 	border-top: 4px solid #FA8A00 !important;
   border-bottom: 0px #FA8A00 solid !important;
-  background-color: #BAC3CD;
+  background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%)
 }
 
+.tagline-strong:hover { background-position: right center; }
 
 
 .tagline {

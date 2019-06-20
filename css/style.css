@@ -680,7 +680,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-top: 2em;
   position: relative;  
   background: #efefef;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .hcs-tab-area {
@@ -704,6 +704,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding-left: 50px;
   color: #777b7e;
+  font-size: 18px;
 }
 
 .hcs-accordion .hcs-accordion-heading h3:hover, .hcs-accordion .hcs-accordion-heading h3:focus {
@@ -734,7 +735,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .hcs-accordion .hcs-accordion-content .inner ul li {
   padding: 0px;
   margin: 0px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .hcs-accordion.active .icon {
   -webkit-transform: rotate(0deg);
@@ -751,7 +752,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 16px;
 }
 .content-area .hcs-tab-area ul li{
-  font-size: 20px;
+  font-size: 18px;
 } 
 
 .hcs-accordion .panel {

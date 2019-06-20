@@ -781,6 +781,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .content-area .hcs-accordion p {
   margin: 0 auto;
+  font-size: 18px;
 }
 
 .i-accordion .panel-heading,

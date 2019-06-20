@@ -42,11 +42,47 @@
 		<script src="/js/magnific-popup-options.js"></script>
 		<!-- Main -->
 		<script src="/js/main.js"></script>
-		
+        
+        <!-- Tabs -->
+        <script src="/js/responsive-tabs.js"></script>
+        
+
 		<script type="text/javascript">
 			$(document).ready( function() {
 				$("#hcs-nav").load("/nav.html");
 				$("#hcs-footer").load("/footer.html");
+
+                // Tabs Initialisation 
+                // Horizontal Tab
+                $('#horizontal-tab-container').easyResponsiveTabs({
+                    type: 'default', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    tabidentify: 'hcs-tab', // The tab groups identifier
+                    activate: function(event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#nested-tabInfo');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
+                    }
+                });
+                
+                //Vertical Tab
+                $('#vertical-tab-container').easyResponsiveTabs({
+                    type: 'vertical', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    closed: 'accordion', // Start closed if in accordion view
+                    tabidentify: 'hcs-tab', // The tab groups identifier
+                    activate: function(event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#nested-tabInfo2');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
+                    }
+                });
 			});
 		</script>
 		<!-- Modernizr JS -->
@@ -409,43 +445,6 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 
-    <!-- Tabs -->
-	<script src="/js/responsive-tabs.js"></script>
-	<!-- Initialisation-->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			//Horizontal Tab
-			$('#horizontal-tab-container').easyResponsiveTabs({
-				type: 'default', //Types: default, vertical, accordion
-				width: 'auto', //auto or any width like 600px
-				fit: true, // 100% fit in a container
-				tabidentify: 'hcs-tab', // The tab groups identifier
-				activate: function(event) { // Callback function if tab is switched
-					var $tab = $(this);
-					var $info = $('#nested-tabInfo');
-					var $name = $('span', $info);
-					$name.text($tab.text());
-					$info.show();
-				}
-			});
-			
-			//Vertical Tab
-			$('#vertical-tab-container').easyResponsiveTabs({
-				type: 'vertical', //Types: default, vertical, accordion
-				width: 'auto', //auto or any width like 600px
-				fit: true, // 100% fit in a container
-				closed: 'accordion', // Start closed if in accordion view
-				tabidentify: 'hcs-tab', // The tab groups identifier
-				activate: function(event) { // Callback function if tab is switched
-					var $tab = $(this);
-					var $info = $('#nested-tabInfo2');
-					var $name = $('span', $info);
-					$name.text($tab.text());
-					$info.show();
-				}
-			});
-        });
-    </script>
 
 </body>
 

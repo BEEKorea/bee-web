@@ -1315,15 +1315,15 @@ hr {
 	margin-bottom: -1px !important;
 	/* padding: 12px 14px 14px 14px !important; */
 	border-top: 4px solid #FA8A00 !important;
-  border-bottom: 0px #fff solid !important;
-  background-color: #fff;
+  border-bottom: 0px #FA8A00 solid !important;
+  background-color: #BAC3CD;
 }
 
 
 
 .tagline {
   background: #ffffff;
-  border-bottom: 2px solid #BAC3CD;
+  border-top: 4px solid #BAC3CD;
 }
 
 

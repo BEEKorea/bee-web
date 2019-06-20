@@ -42,13 +42,10 @@ h2.resp-accordion {
 	margin-bottom: -1px !important;
 	/* padding: 12px 14px 14px 14px !important; */
 	border-top: 4px solid #FA8A00 !important;
-	border-bottom: 0px #fff solid !important;
-}
-
-.resp-tab-active {
-    border-bottom: none;
+    border-bottom: 0px #fff solid !important;
     background-color: #fff;
 }
+
 
 .resp-content-active, .resp-accordion-active {
     display: block;

@@ -1308,9 +1308,18 @@ hr {
 }
 
 .tagline-strong {
-  background: #f8f9fa;
-  border-bottom: 2px solid #FA6400;
+  /* background: #f8f9fa;
+  border-bottom: 2px solid #FA6400; */
+  border: 1px solid #FA8A00 !important;
+	border-bottom: none;
+	margin-bottom: -1px !important;
+	/* padding: 12px 14px 14px 14px !important; */
+	border-top: 4px solid #FA8A00 !important;
+  border-bottom: 0px #fff solid !important;
+  background-color: #fff;
 }
+
+
 
 .tagline {
   background: #ffffff;

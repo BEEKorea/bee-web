@@ -40,7 +40,7 @@ h2.resp-accordion {
 	border: 1px solid #FA8A00 !important;
 	border-bottom: none;
 	margin-bottom: -1px !important;
-	padding: 12px 14px 14px 14px !important;
+	/* padding: 12px 14px 14px 14px !important; */
 	border-top: 4px solid #FA8A00 !important;
 	border-bottom: 0px #fff solid !important;
 }

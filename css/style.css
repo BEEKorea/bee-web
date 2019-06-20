@@ -1310,21 +1310,19 @@ hr {
 .tagline-strong {
   /* background: #f8f9fa;
   border-bottom: 2px solid #FA6400; */
-  border: 1px solid #FA8A00 !important;
+  /* border: 1px solid #FA8A00 !important; */
 	border-bottom: none;
 	margin-bottom: -1px !important;
 	/* padding: 12px 14px 14px 14px !important; */
 	border-top: 4px solid #FA8A00 !important;
-  border-bottom: 0px #FA8A00 solid !important;
-  background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%)
+  /* border-bottom: 0px #FA8A00 solid !important; */
+  /* background: rgb(20,157,234); */
+  background: #f5f5f5;
 }
-
-.tagline-strong:hover { background-position: right center; }
-
 
 .tagline {
   background: #ffffff;
-  border-top: 4px solid #BAC3CD;
+  border-top: 4px solid #b3b3b3;
 }
 
 
@@ -1785,7 +1783,7 @@ ul.the-icons {
 
 [class^="icon-"], [class*=" icon-"] {
   margin-top: 1px;
-  margin-right: .3em;
+  margin-right: 8px;
 }
 
 /* custom size */

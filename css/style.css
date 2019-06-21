@@ -815,6 +815,10 @@ hr {
   font-family: 'Noto Sans KR Medium', sans-serif !important;
 }
 
+.hcs-emphasis-color {
+  font-family: 'Noto Sans KR Medium', sans-serif !important;
+  color: #FA6400 !important
+}
        
 /*
  * Basic - spacng

@@ -46,12 +46,16 @@
 		<script src="/js/magnific-popup-options.js"></script>
 		<!-- Main -->
 		<script src="/js/main.js"></script>
+
+		<!-- Tab menu -->
+        <script src="/js/bootstrap-dynamic-tabs.js"></script>
 		
 		<script type="text/javascript">
 			$(document).ready( function() {
 				$("#hcs-nav").load("/nav.html");
 				$("#hcs-footer").load("/footer.html");
 			});
+			$("#mytabs").bootstrapDynamicTabs();
 		</script>
 		<!-- Modernizr JS -->
 		<script src="/js/modernizr-2.6.2.min.js"></script>
@@ -96,96 +100,116 @@
 
         <div class="content-area">
             <div class="hcs-container">
+
+				<div class="hcs-page">
+				
+					<div class="sub-menus">
+						<ul id="mytabs" class="nav nav-pills">
+							<li class="active"><a href="#menu0" data-toggle="pill">본부파송선교사</a></li>
+							<li><a href="#menu1" data-toggle="pill">지역전문사역자</a></li>
+							<li><a href="#menu2" data-toggle="pill">지부선교사</a></li>
+							<li><a href="#menu3" data-toggle="pill">협력선교사</a></li>
+						</ul>
+					</div>    
+					
+				</div>
+				
                 <div class="hcs-page">
-                    <div class="hcs-heading">
-						<h2>본부파송선교사</h2>
-						<h3>정의</h3>
-						<p>BEE 사역에 전적으로 헌신한 사람으로 본부가 관리하는 선교사</p>
+					<div class="tab-content">
+						<div id="menu0" class="tab-pane fade in active">
+							<div class="hcs-heading">
+								<h2>본부파송선교사</h2>
+								<h3>정의</h3>
+								<p>BEE 사역에 전적으로 헌신한 사람으로 본부가 관리하는 선교사</p>
 
-						<p></p>
-						<h3>자격</h3>
-                    
-                        <ul class="mt-20">
-							<li>인도자(부부인 경우 부부 모두)</li>
-							<li>온누리교회에서 시행하는 장기 선교사 훈련(OSOM)이나 단기 선교사 훈련(TP) 또는 이에 준하는 훈련 수료</li>
-							<li>BEE에서 시행하는 선교사 훈련(BMT) 수료</li>
-							<li>《일대일 제자훈련 성경공부》와 BEE 과목 중 《갈라디아서》를 포함하여 세 과목 이상을 인도자로서 인도한 경험</li>
-						</ul>
+								<p></p>
+								<h3>자격</h3>
+							
+								<ul class="mt-20">
+									<li>인도자(부부인 경우 부부 모두)</li>
+									<li>온누리교회에서 시행하는 장기 선교사 훈련(OSOM)이나 단기 선교사 훈련(TP) 또는 이에 준하는 훈련 수료</li>
+									<li>BEE에서 시행하는 선교사 훈련(BMT) 수료</li>
+									<li>《일대일 제자훈련 성경공부》와 BEE 과목 중 《갈라디아서》를 포함하여 세 과목 이상을 인도자로서 인도한 경험</li>
+								</ul>
 
-						<p></p>
-						<h3>책임</h3>
-						<p>50 aCHs/년</p>
+								<p></p>
+								<h3>책임</h3>
+								<p>50 aCHs/년</p>
 
-						<p></p>
-						<h3>지원</h3>
-						<p>본부로 문의</p>
+								<p></p>
+								<h3>지원</h3>
+								<p>본부로 문의</p>
+							</div>
+						</div>
+						<div id="menu1" class="tab-pane fade">
+							<div class="hcs-heading">
+								<h2>지역전문사역자</h2>
+								<h3>정의</h3>
+								<p>본부파송선교사의 자격에 미달하나 특성 지역에서 선교사에 준하는 BEE 사역을 수행하는 사람 </p>
+
+								<p></p>
+								<h3>자격</h3>
+							
+								<ul class="mt-20">
+									<li>인도자</li>
+									<li>온누리교회에서 시행하는 단기 선교사 훈련(TP) 또는 이에 준하는 훈련 수료</li>
+									<li>BEE에서 시행하는 선교사 훈련(BMT) 수료</li>
+									<li>《일대일 제자훈련》과 BEE 과목 중 《갈라디아서》를 포함하여 세 과목 이상을 인도자로서 인도한 경험</li>
+								</ul>
+
+								<p></p>
+								<h3>책임</h3>
+								<p>30 aCHs/년</p>
+
+								<p></p>
+								<h3>지원</h3>
+								<p>본부로 문의</p>
+							</div>
+						</div>
+						<div id="menu2" class="tab-pane fade">
+							<div class="hcs-heading">
+								<h2>지부선교사</h2>
+								<h3>정의</h3>
+								<p>지부의 관리를 받는 현지인 선교사</p>
+
+								<p></p>
+								<h3>자격</h3>
+							
+								<ul class="mt-20">
+									<li>인도자</li>
+									<li>지부선교사 훈련 수료</li>
+									<li>1그룹 이상(최소 8명)을 DPM 수료를 시킨 사람</li>
+								</ul>
+
+								<p></p>
+								<h3>책임</h3>
+								<p>50 aCHs/년</p>
+
+								<p></p>
+								<h3>지원</h3>
+								<p>본부로 문의</p>
+							</div>
+						</div>
+						<div id="menu2" class="tab-pane fade">
+							<div class="hcs-heading">
+								<h2>협력선교사</h2>
+								<h3>정의</h3>
+								<p>본인이 사역하고 있는 지역에서 BEE 사역을 접목할 명확한 계획이 있는 타 기관 파송 선교사</p>
+
+								<p></p>
+								<h3>자격</h3>
+								<p>파송 선교사</p>
+
+								<p></p>
+								<h3>책임</h3>
+								<p>15 aCHs/년</p>
+
+								<p></p>
+								<h3>지원</h3>
+								<p>본부로 문의</p>
+							</div>
+						</div>
 					</div>
-					<hr>
-					<div class="hcs-heading">
-						<h2>지역전문사역자</h2>
-						<h3>정의</h3>
-						<p>본부파송선교사의 자격에 미달하나 특성 지역에서 선교사에 준하는 BEE 사역을 수행하는 사람 </p>
-
-						<p></p>
-						<h3>자격</h3>
-					
-						<ul class="mt-20">
-							<li>인도자</li>
-							<li>온누리교회에서 시행하는 단기 선교사 훈련(TP) 또는 이에 준하는 훈련 수료</li>
-							<li>BEE에서 시행하는 선교사 훈련(BMT) 수료</li>
-							<li>《일대일 제자훈련》과 BEE 과목 중 《갈라디아서》를 포함하여 세 과목 이상을 인도자로서 인도한 경험</li>
-						</ul>
-
-						<p></p>
-						<h3>책임</h3>
-						<p>30 aCHs/년</p>
-
-						<p></p>
-						<h3>지원</h3>
-						<p>본부로 문의</p>
-					</div>
-					<hr>
-					<div class="hcs-heading">
-						<h2>지부선교사</h2>
-						<h3>정의</h3>
-						<p>지부의 관리를 받는 현지인 선교사</p>
-
-						<p></p>
-						<h3>자격</h3>
-					
-						<ul class="mt-20">
-							<li>인도자</li>
-							<li>지부선교사 훈련 수료</li>
-							<li>1그룹 이상(최소 8명)을 DPM 수료를 시킨 사람</li>
-						</ul>
-
-						<p></p>
-						<h3>책임</h3>
-						<p>50 aCHs/년</p>
-
-						<p></p>
-						<h3>지원</h3>
-						<p>본부로 문의</p>
-					</div>
-					<hr>
-					<div class="hcs-heading">
-						<h2>협력선교사</h2>
-						<h3>정의</h3>
-						<p>본인이 사역하고 있는 지역에서 BEE 사역을 접목할 명확한 계획이 있는 타 기관 파송 선교사</p>
-
-						<p></p>
-						<h3>자격</h3>
-						<p>파송 선교사</p>
-
-						<p></p>
-						<h3>책임</h3>
-						<p>15 aCHs/년</p>
-
-						<p></p>
-						<h3>지원</h3>
-						<p>본부로 문의</p>
-					</div>
-					
                 </div>
             </div>
         </div>

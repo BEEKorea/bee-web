@@ -430,7 +430,7 @@ h1, h2, h3, h4, h5, h6, figure {
 } 
 
 .content-area .hcs-heading {
-  margin-top: 26px;
+  margin-top: 46px;
 }
 
 .content-area .hcs-heading h2 {
@@ -476,7 +476,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .content-area p, .content-area ul, .content-area ol {
-  margin: 40px auto;
+  /* margin: 40px auto; */
 }
 
 .content-area ol {

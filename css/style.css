@@ -475,8 +475,8 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-top: 10px;
 }
 
-.content-area p, .content-area ul, .content-area ol {
-  /* margin: 40px auto; */
+.content-area .tab-content p {
+  margin: 40px auto;
 }
 
 .content-area ol {

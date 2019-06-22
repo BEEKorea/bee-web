@@ -436,7 +436,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .content-area .hcs-heading h2 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 34px;
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   line-height: 1.5;
   color: #4A4A4A;
   position: relative;
@@ -445,7 +445,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .content-area .hcs-heading h3 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 26px;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 0px;
   line-height: 1.5;
   color: #FA8A00;

@@ -287,7 +287,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #hcs-hero .flexslider .slider-text > .banner1 {
-  background: url(/images/banner_1_oval.png) no-repeat right center;
+  background: url('/images/banner_1_oval.png') no-repeat right center;
 }
 
 #hcs-hero .flexslider .slider-text > #banner_text {
@@ -295,15 +295,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #hcs-hero .flexslider .slider-text > .banner2 {
-  background: url(/images/banner_2_oval.png) no-repeat left center;
+  background: url('/images/banner_2_oval.png') no-repeat left center;
 }
 
 #hcs-hero .flexslider .slider-text > .banner3 {
-  background: url(/images/banner_3_oval.png) no-repeat left center;
+  background: url('/images/banner_3_oval.png') no-repeat left center;
 }
 
 #hcs-hero .flexslider .slider-text > .banner4 {
-  background: url(/images/banner_4_oval.png) no-repeat right center;
+  background: url('/images/banner_4_oval.png') no-repeat right center;
 }
 
 #hcs-hero .flexslider .slider-text > .slider-text-inner {

@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BEE Korea &mdash; 말씀으로 세계로</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="/css/animate.css">
+		<!-- Fonts-->
+		<link rel="stylesheet" href="/css/icomoon.css">
+		<link
+			href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900|Roboto:400,500,700,900&amp;subset=korean"
+			rel="stylesheet">
+		<!-- Themify Icons-->
+		<link rel="stylesheet" href="/css/themify-icons.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="/css/bootstrap.css">
+		<!-- Magnific Popup -->
+		<link rel="stylesheet" href="/css/magnific-popup.css">
+		<!-- Owl Carousel  -->
+		<link rel="stylesheet" href="/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+		<!-- Flexslider -->
+		<link rel="stylesheet" href="/css/flexslider.css">
+		<!-- Theme style  -->
+		<link rel="stylesheet" href="/css/style.css">
+        <!-- Tabs -->
+        <link rel="stylesheet" href="/css/responsive-tabs.css">
+
+		<!-- jQuery -->
+		<script src="/js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="/js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="/js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="/js/jquery.waypoints.min.js"></script>
+		<!-- Carousel -->
+		<script src="/js/owl.carousel.min.js"></script>
+		<!-- countTo -->
+		<script src="/js/jquery.countTo.js"></script>
+		<!-- Flexslider -->
+		<script src="/js/jquery.flexslider-min.js"></script>
+		<!-- Magnific Popup -->
+		<script src="/js/jquery.magnific-popup.min.js"></script>
+		<script src="/js/magnific-popup-options.js"></script>
+		<!-- Main -->
+		<script src="/js/main.js"></script>
+        
+        <!-- Tabs -->
+        <script src="/js/responsive-tabs.js"></script>
+        
+
+		<script type="text/javascript">
+			$(document).ready( function() {
+				$("#hcs-nav").load("/nav.html");
+				$("#hcs-footer").load("/footer.html");
+
+                // Tabs Initialisation 
+                // Horizontal Tab
+                $('#horizontal-tab-container').easyResponsiveTabs({
+                    type: 'default', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    tabidentify: 'hcs-tab', // The tab groups identifier
+                    activate: function(event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#nested-tabInfo');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
+                    }
+                });
+                
+                //Vertical Tab
+                $('#vertical-tab-container').easyResponsiveTabs({
+                    type: 'vertical', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    closed: 'accordion', // Start closed if in accordion view
+                    tabidentify: 'hcs-tab', // The tab groups identifier
+                    activate: function(event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#nested-tabInfo2');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
+                    }
+                });
+			});
+		</script>
+		<!-- Modernizr JS -->
+		<script src="/js/modernizr-2.6.2.min.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+<body>
+
+	<div class="hcs-loader"></div>
+
+	<div id="page">
+        <div id="hcs-nav"></div>
+
+        <div class="breadcrumb-area">
+            <div class="hcs-container">
+                <div class="hcs-page">
+                    <div class="hcs-heading row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <h2>FAQ</h2>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb pull-right">
+                                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div class="hcs-container">
+                <div class="hcs-page">
+
+                        <div class="hcs-tab-area">  
+                            <div id="horizontal-tab-container" >
+                                <ul class="resp-tabs-list hcs-tab">
+                                    <li>자주묻는 질문</li>
+                                    <li>회원제도(정회원)</li>
+                                    <li>FTS(인도자훈련학교)</li>
+                                </ul>
+                                <div class="resp-tabs-container hcs-tab">
+                                    <div >
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>자주쓰는 용어</h3>
+                                                
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <h3>Diplomas</h3>
+                                                    <ul>
+                                                    <li> DPM - Diploma in Practical Ministry (기본사역자과정)</li>
+                                                    <li> DCL - Diploma in Church Leadership (교회지도자과정)</li>
+                                                    <li> DBS - Diploma in Biblical Studies (성경연구과정)</li>
+                                                    </ul>   
+                                                    <br>
+                                                    
+                                                    <h3>Courses</h3>
+                                                    <ul>
+                                                    <li> 1:1 - One to One Discipleship Training (일대일 제자 양육)</li>
+                                                    <li> FM - Following the Master (십자가를 지고 - 마가복음)</li>
+                                                    <li> G - Galatians (갈라디아서)</li>
+                                                    <li> R - Romans (로마서)</li>
+                                                    <li> CL - Christian Life (그리스도인의 삶)</li>
+                                                    <li> ED1 - Evangelism and Discipleship 1 (전도와 제자 양육 1)</li>
+                                                    <li> ED2 - Evangelism and Discipleship 2 (전도와 제자 양육 2) </li>
+                                                    <li> CE - Comprehensive Exam (종합시험-DPM 졸업생은 종합시험을 통과해야 한다.)</li>
+                                                    <li> FTS - Facilitator Training School (인도자 훈련 학교)</li>
+                                                    <li> GCGG - Growing Church for God’s Glory (교회 성장론)</li>
+                                                    <li> CGW - Communication God’s Word (하나님의 말씀 전달 - 설교법)</li>
+                                                    <li> CD - Church Dynamics (교회론)</li>
+                                                    <li> STB - Studying the Bible (성경 연구 방법)</li>
+                                                    <li> OB1 - Open the Bible 1 (구약개론 - 성경을 펼쳐라 1)</li>
+                                                    <li> OB2 - Open the Bible 2 (신약개론 - 성경을 펼쳐라 12)</li>
+                                                    <li> IJ1 - (한국어가 아닌 지역에서 사용-영문 버전에서만 보여야 함) Incredible Journey 1 (경이로운 성경 여행 1 - 구약개론)</li>
+                                                    <li> IJ2 - (한국어가 아닌 지역에서 사용-영문 버전에서만 보여야 함) Incredible Journey 2 (경이로운 성경 여행 2 - 신약개론)</li>
+                                                    <li> HEB - Hebrews (히브리서)</li>
+                                                    <li> CM - Christian Marriage (그리스도인의 결혼)</li>
+                                                    <li> CF - Christian Family (그리스도인의 자녀양육)</li>
+                                                    <li> CG - Character of God (하나님의 성품)</li>
+                                                    <li> CL - Christian Life (그리스도인의 생활)</li>
+                                                    <li> DT - Doctrine (교리론)</li>
+                                                    <li> STBA - Studying the Bible Application (성경연구방법 적용)</li>
+                                                    <li> Apo - Apologetic (변증론)</li>
+                                                    <li> BEE Fa - BEE Facilitation (BEE 과목을 인도하는 것. 일대일 제외)</li>
+                                                    <li> HWT - Healing the Wound of Trauma (상한 마음의 치유)</li>
+                                                    <li> SBN - Studying Biblical Narrative</li>
+                                                    <li> SFL - Studying Figurative Language</li>
+                                                    <li> SBW - Studying Biblical Words</li>
+                                                    <li> SBT - Studying Biblical Themes</li>
+                                                    <li> DH - Discerning Heart (그분이 지으신 마음)</li>
+                                                    <li> DOC1 - Doctrine1 (교리론 1)</li>
+                                                    <li> DOC2 - Doctrine2 (교리론 2)</li>
+                                                    <li> TL 1 - Tracing the Loves 1 (찾아온 사랑을 찾아 1 : 호남)</li>
+                                                    <li> TL 2 - Tracing the Loves 2 (찾아온 사랑을 찾아 2 : 호서)</li>
+                                                    <li> RTS - Really Training School (라구 강습회)</li>
+                                                    <li> BCF - BEE Church Fellowship (BEE 교회 연합)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>아웃리치란?</h3>
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <ul>
+                                                    <li>BEE Korea에서는 상시 단기사역이 있고 이 단기사역을 통하여 선교지를 경험할 수 있다. </li>
+                                                    <li>영어 또는 현지어로 인도가 가능한 인도자는 세미나를 인도할 수 있고 단기사역에 일부 금액이 지원된다.  </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>OBA</h3>
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <ul>
+                                                    <li>Onnuri BEE Academy
+                                                    <li>온누리교회에서 진행되는 BEE 세미나 1년 과정으로 갈라디아서, 로마서, 그리스도인의 생활이다.</li>
+                                                    <li>입학식, 수료식, 수련회가 과정에 포함된다.</li>
+                                                    <li>전반기, 하반기에 한 번씩 개설된다.</li>
+                                                    <li>갈라디아서와 로마서, 수련회를 마치고 방학 기간을 갖는다. 방학 동안에 단기사역에 참여할 수 있다.</li>
+                                                    <li>방학 후 그리스도인의 삶을 마치고 수료가 가능한 학생은 수료식을 갖는다.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+
+                                        <div>
+                                            <div class="hcs-accordion">
+                                                <div class="hcs-accordion-heading">
+                                                    <div class="icon"><i class="icon-cross"></i></div>
+                                                    <h3>OBC</h3>
+                                                    
+                                                </div>
+                                                <div class="hcs-accordion-content">
+                                                    <div class="inner">
+                                                        <ul>
+                                                        <li>Onnuri Bible Club</li>
+                                                        <li>온누리교회에서 진행되는 양육프로그램이다. </li>
+                                                        <li>BEE Korea의 일부 과목을 채택하고 있다. </li>
+                                                        <li>갈라디아서, 로마서, 하나님의 성품, 요한복음은 필수 과목, 그리스도인의 결혼은 선택 과목이다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hcs-accordion">
+                                                <div class="hcs-accordion-heading">
+                                                    <div class="icon"><i class="icon-cross"></i></div>
+                                                    <h3>루체</h3>
+                                                </div>
+                                                <div class="hcs-accordion-content">
+                                                    <div class="inner">
+                                                        <ul>
+                                                        <li>BEE Korea의 예배 위원회에 포함된 성가대 팀</li>
+                                                        <li>BEE Korea의 행사에 특송을 하거나 단기사역에서 큰 활약을 하고 있다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hcs-accordion">
+                                                <div class="hcs-accordion-heading">
+                                                    <div class="icon"><i class="icon-cross"></i></div>
+                                                    <h3>토요 기도모임</h3>
+                                                </div>
+                                                <div class="hcs-accordion-content">
+                                                    <div class="inner">
+                                                        <ul>
+                                                        <li>BEE Korea는 매주 토요일 서빙고 온누리교회와 양재 온누리교회 2곳에서 선교지를 위해서 기도한다.</li>
+                                                        <li>시작 시간은 토요일 새벽 6시 30분 이고 BEE Korea의 사역과 선교지를 위해서 기도하고 싶은 누구나 참석 가능하다.</li>
+                                                        <li>장소는 서빙고 온누리교회 한동홀, 양재 온누리교회 비전홀B 이다. 교회 사정에 때라서 장소가 변경될 수 있다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="hcs-accordion">
+                                                <div class="hcs-accordion-heading">
+                                                    <div class="icon"><i class="icon-cross"></i></div>
+                                                    <h3>비오는 수요일</h3>
+                                                </div>
+                                                <div class="hcs-accordion-content">
+                                                    <div class="inner">
+                                                        <ul>
+                                                        <li>BEE Korea에 소식지 팀이 있다. </li>
+                                                        <li>이 소식지 팀은 BEE Korea의 회원과 소식을 받고자 원하는 사람들에게 매주 나눌만한 소식을 기사로 제공한다. </li>
+                                                        <li>매주 수요일 2시에 제공되는 BEE 소식이기에 비오는 수요일이라 명명한다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+
+                                    <div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>정회원의 자격은?</h3>
+                                                
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <p>BEE Korea의 훈련사역자(TF)와 인도자(FT)는 정회원의 의무와 혜택이 있다.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>정회원의 의무(회비)는?</h3>
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <p>1구좌는 최하 2만원으로 정회원은 매달, 2구좌 이상 회비를 납입해야 한다.  </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>정회원의 혜택은?</h3>
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <p>세미나 수강이나 인도시에 1권의 교재를 1번 만 지급 받는다. 세미나 수강시 선교비를 공제 받는다. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div> 
+
+                                    <div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>FTS란?</h3>
+                                                
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <p>Facilitator Training School의 약어로 '인도자 훈련학교'를 의미한다.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>FTS의 자격은?</h3>
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <p>BEE Korea의 과목 중 갈라디아서, 로마서, 그리스도인의 생활을 포함하여 5과목 이상 수강한 학생을 대상으로 세미나 추천수를 확인한다. 확인된 추천수가 3개 이상인 사람을 대상으로 FTS 대상자를 뽑아 초대 메일을 발송한다. 초대 메일을 받은 자는 FTS에 지원할 수 있는 자격이 주어진다.  </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>FTS의 입학과 졸업 과정은?</h3>
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <ul>
+                                                        <li>FTS초청 메일을 받은 학생은 지원이 가능하고 지원을 하게 되면 일정을 안내 받게 된다. 일정 가운데 입학과 졸업 일정이 안내된다. </li>
+                                                        <li>입학식과 졸업식에 참석하지 않으면 미수료처리가 된다.</li>
+                                                        <li>FTS는 총 16주(특성상 주수는 줄어들거나 늘어날 수 있다.)로 구성되고 입학식과 졸업식이 포함된다. </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>FA(예비인도자)란?</h3>
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <ul>
+                                                        <li>FTS를 수료한 학생은 예비인도자(FA)의 자격이 주어진다. </li>
+                                                        <li>예비인도자(FA)는 인도자(FT)를 도와 세미나를 진행하며 적어도 1과 이상을 인도해야 한다. </li>
+                                                        <li>예배인도자(FA)는 매과 학습계획서를 인도자(FT)에게 제출한다.</li>
+                                                        <li>인도자(FT)는 FA평가서를 작성하고 본부로 제출해야 한다.</li>
+                                                        <li>2 과목 이상을 성공적으로 섬긴 예비인도자(FA)는 훈련사역자가 될 기회가 주어진다. </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>TF(훈련사역자)란?</h3>
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <ul>
+                                                        <li>훈련사역자가 될 기회가 주어진 예비인도자는 BEE Korea 본부로 부터 지원서를 제출할 수 있는 안내 메일을 받게 된다.</li>
+                                                        <li>지원 의사가 있는 예비인도자는 지원서를 제출한다.</li>
+                                                        <li>훈련사역자를 선발하기 위해서 위원회가 구성되고 이 위원들은 지원서와 FA평가서를 통하여  훈련사역자가 될 자격이 있는지 확인하고 선발한다.</li>
+                                                        <li>훈련사역자가 되면 BEE Korea의 정회원 자격을 얻게되고 의무와 혜택을 알고 진행하며 받아야 한다.</li>
+                                                        <li>훈련사역자가 되면 혼자서 또는 2명이 한 팀으로 세미나를 진행한다.</li>
+                                                        <li>훈련사역자의 세미나는 인도자가 참관하여 세미나의 장단점을 보안해준다.   </li>
+                                                        <li>2과목 이상 훈련사역자로 세미나를 진행하게되면 인도자의 자격이 주어진다.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="hcs-accordion">
+                                            <div class="hcs-accordion-heading">
+                                                <div class="icon"><i class="icon-cross"></i></div>
+                                                <h3>FT(인도자)란?</h3>
+                                            </div>
+                                            <div class="hcs-accordion-content">
+                                                <div class="inner">
+                                                    <ul>
+                                                        <li>인도자가 될 기회가 주어진 훈련사역자는 BEE Korea 본부로 부터 사역자 지원서를 제출할 수 있는 안내 메일을 받게 된다. </li>
+                                                        <li>지원 의사가 있는 훈련사역자는 지원서를 제출한다. </li>
+                                                        <li>제출된 지원서는 위원회를 통해서 참관자와 같이 확인되고 인도자로 선발된다. </li>
+                                                        <li>인도자가 될 사람들은 마지막으로 이사회에서 점검받고 면담을 갖게 되고 최종 선발된다. </li>
+                                                        <li>인도자는 모든 과목을 인도할 자격이 주어지며 BEE Korea의 정회원이다.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+                                    </div> 
+
+                                    
+                                </div>
+                            </div>
+                            
+
+                   
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="hcs-footer"></div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+
+</body>
+
+</html>

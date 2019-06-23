@@ -429,7 +429,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #FA6400;
 } 
 
-.content-area .row  {
+.content-area .row {
   margin-top: 46px;
 }
 
@@ -440,6 +440,7 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1.5;
   color: #4A4A4A;
   position: relative;
+  padding-top: 46px;
 }
 
 .content-area .hcs-heading h3, .content-area .tab-area .hcs-heading h3 {

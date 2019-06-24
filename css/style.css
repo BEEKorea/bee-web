@@ -286,6 +286,7 @@ h1, h2, h3, h4, h5, h6, figure {
   min-height: 400px; 
 }
 
+/* kor */
 #hcs-hero .flexslider .slider-text > .banner1 {
   background: url('/images/banner_1_oval.png') no-repeat right center;
 }
@@ -306,9 +307,32 @@ h1, h2, h3, h4, h5, h6, figure {
   background: url('/images/banner_4_oval.png') no-repeat right center;
 }
 
+/* eng */
+#hcs-hero .flexslider .slider-text > .banner1.en {
+  background: url('/images/banner_1_oval_en.png') no-repeat right center;
+}
+/* 
+#hcs-hero .flexslider .slider-text > #banner_text {
+  display: none;
+} */
+
+#hcs-hero .flexslider .slider-text > .banner2.en {
+  background: url('/images/banner_2_oval_en.png') no-repeat left center;
+}
+
+#hcs-hero .flexslider .slider-text > .banner3.en {
+  background: url('/images/banner_3_oval_en.png') no-repeat left center;
+}
+
+#hcs-hero .flexslider .slider-text > .banner4.en {
+  background: url('/images/banner_4_oval_en.png') no-repeat right center;
+}
+
 #hcs-hero .flexslider .slider-text > .slider-text-inner {
   display: none;
 }
+
+
 
 #hcs-hero .flexslider .slider-text > .slider-btn-inner {
   display: table-cell;

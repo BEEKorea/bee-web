@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /* eng */
-#hcs-hero .flexslider .slider-text > .banner1.en {
+#hcs-hero .flexslider .slider-text > .banner1_en {
   background: url('/images/banner_1_oval_en.png') no-repeat right center;
 }
 /* 
@@ -316,23 +316,21 @@ h1, h2, h3, h4, h5, h6, figure {
   display: none;
 } */
 
-#hcs-hero .flexslider .slider-text > .banner2.en {
+#hcs-hero .flexslider .slider-text > .banner2_en {
   background: url('/images/banner_2_oval_en.png') no-repeat left center;
 }
 
-#hcs-hero .flexslider .slider-text > .banner3.en {
+#hcs-hero .flexslider .slider-text > .banner3_en {
   background: url('/images/banner_3_oval_en.png') no-repeat left center;
 }
 
-#hcs-hero .flexslider .slider-text > .banner4.en {
+#hcs-hero .flexslider .slider-text > .banner4_en {
   background: url('/images/banner_4_oval_en.png') no-repeat right center;
 }
 
 #hcs-hero .flexslider .slider-text > .slider-text-inner {
   display: none;
 }
-
-
 
 #hcs-hero .flexslider .slider-text > .slider-btn-inner {
   display: table-cell;

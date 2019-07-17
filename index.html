@@ -331,99 +331,19 @@
 </body>
 
 <script type="text/javascript">
-$(document).ready(function(){
-    $.ajax({
-        url: "http://0.0.0.0:8000/new_board_api/",
-        dataType: 'json',
-        type: 'get',
-        cache:false,
-        success: function(data){
-            /*console.log(data);*/
-            var _table_data = '';
-            _table_data += '<tbody>'
-            $.each(data, function(index, value){
-                /*console.log(value);*/
-                _table_data += '<tr>';
-                _href = '';
-
-                _styles = '';
-                if (value.file != '') {
-                  _styles += ' with-file ';
-                }
-
-                if (value.is_new == true) {
-                  _styles += ' new ';
-                }
-
-                _table_data += '<td><a href="' + _href;
-                if (_styles != '') {
-                  _table_data += '" class="' + _styles + '" >';
-                }else {
-                  _table_data += '" >';
-                }
-
-                 _table_data += value.subject + '</a></td>'
-
-
-                _table_data += '<td>'+value.created+'</td>';
-                _table_data += '<td>'+value.created_by+'</td>';
-                _table_data += '</tr>';
-            });
-             _table_data += '</tbody>'
-            $("#notice_table").append(_table_data);
-        },
-        error: function(d){
-            /*console.log("error");*/
-            alert("404. Please wait until the File is Loaded.");
-        }
-    });
-
-
-    $.ajax({
-        url: "http://0.0.0.0:8000/photo_board_api/",
-        dataType: 'json',
-        type: 'get',
-        cache:false,
-        success: function(data){
-            /*console.log(data);*/
-            var _table_data = '';
-            _table_data += '<tbody>'
-            $.each(data, function(index, value){
-                /*console.log(value);*/
-                _table_data += '<tr>';
-					_href = '';
-
-                _styles = '';
-                if (value.file != '') {
-                  _styles += ' with-file ';
-                }
-
-                if (value.is_new == true) {
-                  _styles += ' new ';
-                }
-
-                _table_data += '<td><a href="' + _href;
-                if (_styles != '') {
-                  _table_data += '" class="' + _styles + '" >';
-                }else {
-                  _table_data += '" >';
-                }
-
-                 _table_data += value.subject + '</a></td>'
-
-
-                _table_data += '<td>'+value.created+'</td>';
-                _table_data += '<td>'+value.created_by+'</td>';
-                _table_data += '</tr>';
-            });
-             _table_data += '</tbody>'
-            $("#beesu_table").append(_table_data);
-        },
-        error: function(d){
-            /*console.log("error");*/
-            alert("404. Please wait until the File is Loaded.");
-        }
-    });
+ $(document).ready(function() {
+$.ajax({
+    type: 'GET',
+	dataType: 'jsonp',
+	url: 'http://0.0.0.0:8000/new_board_api/',
+    success : function(d){
+        // d.key;
+		console.log('성공 - ' + d)
+    },
+    error : function(xhr){
+        console.log('실패 - '+xhr);
+    }
+});
 });
 </script>
 

@@ -467,6 +467,10 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: 50px;
 }
 
+.content-area .tab-content .hcs-heading {
+  margin-top: 10px;
+}
+
 .content-area .hcs-heading h2 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 34px;

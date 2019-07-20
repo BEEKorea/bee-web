@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: 36px;
 }
 
-.breadcrumb-area .hcs-heading h2 {
+.breadcrumb-area .hcs-heading h2{
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 38px;
   margin-bottom: 0px;
@@ -463,17 +463,25 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #FA6400;
 } 
 
+
 .content-area .hcs-heading {
   margin-top: 50px;
 }
 
-.content-area .hcs-heading h2 {
+.content-area .hcs-heading h2, .content-area .hcs-heading-en h2 {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 34px;
   margin-bottom: 30px;
   line-height: 1.5;
   color: #4A4A4A;
   position: relative;
+}
+
+.content-area .hcs-heading h2{
+  font-size: 34px;
+}
+
+.content-area .hcs-heading-en h2{
+  font-size: 28px;
 }
 
 .content-area .hcs-heading h3, .content-area .tab-area .hcs-heading h3 {
@@ -2033,11 +2041,6 @@ ul.the-icons {
     width: 100%;
   }
   
-  .content-area .hcs-heading h2, .breadcrumb-area .hcs-heading h2 {
-    font-size: 30px;
-  }
-
-
   /*  
   * Breadcumb Area
   */
@@ -2327,10 +2330,6 @@ ul.the-icons {
   #hcs-new-nav-items .navbar-nav {
     float: left !important;
     width: 100%;
-  }
-
-  .content-area .hcs-heading h2, .breadcrumb-area .hcs-heading h2 {
-    font-size: 30px;
   }
 
 

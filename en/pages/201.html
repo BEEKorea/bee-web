@@ -53,7 +53,8 @@
 		<script type="text/javascript">
 			$(document).ready( function() {
 				$("#hcs-nav").load("/en/nav.html");
-				$("#hcs-footer").load("/en/footer.html");
+                $("#hcs-footer").load("/en/footer.html");
+                $("#hcs-submenu").load("/en/201_submenu.html");
 			});
             $("#mytabs").bootstrapDynamicTabs();
 		</script>
@@ -84,7 +85,7 @@
                                 <ol class="breadcrumb pull-right">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                     <li class="breadcrumb-item">교육과정 소개</li>
-                                    <li class="breadcrumb-item" aria-current="page">구약</li>
+                                    <li class="breadcrumb-item" aria-current="page">Old Testament</li>
                                 </ol>
                             </nav>
                         </div>
@@ -100,14 +101,7 @@
                 
                 <div class="hcs-page">
                     
-                    <div class="sub-menus">
-                        <ul id="mytabs" class="nav nav-pills">
-                            <li class="active"><a href="#menu0" data-toggle="pill">성경을 펼쳐라 1</a></li>
-                            <li><a href="#menu1" data-toggle="pill">모세오경</a></li>
-                            <li><a href="#menu2" data-toggle="pill">시편</a></li>
-                            <li><a href="#menu3" data-toggle="pill">다니엘서</a></li>
-                        </ul>
-                    </div>    
+                    <div id="hcs-submenu"></div>
                     
                 </div>
 

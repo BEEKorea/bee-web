@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: 50px;
 }
 
-.content-area .hcs-heading h2, .content-area .hcs-heading-en h2 {
+.content-area .hcs-heading h2, .content-area .hcs-heading.en h2 {
   font-family: 'Noto Sans KR', sans-serif;
   margin-bottom: 30px;
   line-height: 1.5;
@@ -480,7 +480,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 34px;
 }
 
-.content-area .hcs-heading-en h2{
+.content-area .hcs-heading.en h2{
   font-size: 28px;
 }
 

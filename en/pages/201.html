@@ -54,7 +54,6 @@
 			$(document).ready( function() {
 				$("#hcs-nav").load("/en/nav.html");
                 $("#hcs-footer").load("/en/footer.html");
-                $("#hcs-submenu").load("/en/pages/201_submenu.html");
 			});
             $("#mytabs").bootstrapDynamicTabs();
 		</script>
@@ -101,7 +100,14 @@
                 
                 <div class="hcs-page">
                     
-                    <div id="hcs-submenu"></div>
+                    <div class="sub-menus">
+                        <ul id="mytabs" class="nav nav-pills">
+                            <li class="active"><a href="#menu0" data-toggle="pill">Incredible Journey 1</a></li>
+                            <li><a href="#menu1" data-toggle="pill">Pentateuch</a></li>
+                            <li><a href="#menu2" data-toggle="pill">Worshiping God in the Psalms</a></li>
+                            <li><a href="#menu3" data-toggle="pill">Daniel</a></li>
+                        </ul>
+                    </div>    
                     
                 </div>
 

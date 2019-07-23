@@ -2121,6 +2121,10 @@ ul.the-icons {
     
   }
 
+  .hcs-card-item.en {
+    min-height: auto;
+  }
+
 /* }
 
 

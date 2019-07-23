@@ -25,6 +25,8 @@
 		<link rel="stylesheet" href="/css/flexslider.css">
 		<!-- Theme style  -->
 		<link rel="stylesheet" href="/css/style.css">
+		<!-- Dynamic Tab style  -->
+        <link rel="stylesheet" href="/css/bootstrap-dynamic-tabs.css">
 
 
 		<!-- jQuery -->
@@ -55,7 +57,7 @@
 				$("#hcs-nav").load("/en/nav.html");
 				$("#hcs-footer").load("/en/footer.html");
 			});
-			$("#mytabs").bootstrapDynamicTabs();
+			// $("#mytabs").bootstrapDynamicTabs();
 		</script>
 		<!-- Modernizr JS -->
 		<script src="/js/modernizr-2.6.2.min.js"></script>
@@ -144,16 +146,16 @@
 							<div class="hcs-heading">
 								<h2>Region Specialist</h2>
 								<h3>They Are</h3>
-								<p class="mt-10">Missionaries devoted to BEE ministry fully belonging to the HQ</p>
+								<p class="mt-10">Qualified BEE workers who pursue the works of HQ missionaries in a specific region.</p>
 
 								
 								<h3>Qualification</h3>
 							
 								<ul class="mt-20 mb-30">
-									<li>Facilitator (If married both)</li>
-									<li>Complete OSOM (training for a long-term missionary), TP (training for short-term missionary) or equivalent</li>
+									<li>Facilitator</li>
+									<li>Complete TP (training for short-term missionary) or equivalent</li>
 									<li>Complete BMT (BEE Missionary Training)</li>
-									<li>Facilitated at least 3 BEE courses including One-to-One Discipleship Traing and Galatians</li>
+									<li>Facilitated at least 3 BEE courses including One-to-One Discipleship Training and Galatians</li>
 								</ul>
 
 								
@@ -220,7 +222,9 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-
+	<script type="text/javascript">
+        $("#mytabs").bootstrapDynamicTabs();
+    </script>
 </body>
 
 </html>

@@ -925,9 +925,13 @@ hr {
   background-color: transparent; 
 }
 
-.breadcrumb-area .breadcrumb .breadcrumb-item.active:not(::before) {
+.breadcrumb-area .breadcrumb .breadcrumb-item.active {
   text-decoration-line: underline;
   text-decoration-style: double;
+}
+
+.breadcrumb-area .breadcrumb .breadcrumb-item.active::before {
+  text-decoration-line: none;
 }
 
 /*

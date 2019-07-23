@@ -395,61 +395,6 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
-/*  
- * Breadcumb Area
- */
-
-.breadcrumb-area {
-  position: relative;
-  z-index: 10;
-  width: 100%; 
-}
-
-.breadcrumb-area .hcs-heading {
-  margin-top: 36px;
-}
-
-.breadcrumb-area .hcs-heading h2{
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 38px;
-  margin-bottom: 0px;
-  line-height: 1.5;
-  color: #FA6400;
-  /* position: relative; */
-}
-
-.breadcrumb-area .breadcrumb {
-  margin: 0;
-  padding: 0;
-  padding-top: 30px;
-  background-color: transparent; 
-}
-.breadcrumb-area .breadcrumb .breadcrumb-item {
-  font-family: 'Noto Sans KR',sans-serif;
-  /* font-size: 20px; */
-  color: #BAC3CD;
-  font-weight: 600; 
-}
-
-.breadcrumb-area .breadcrumb .breadcrumb-item.active {
-  text-decoration-line: underline;
-  text-decoration-style: double;
-}
-
-.breadcrumb-area .breadcrumb .breadcrumb-item a {
-  color: #4A4A4A;
-  font-weight: 600; 
-}
-.breadcrumb-area .breadcrumb .breadcrumb-item a:hover, .breadcrumb-area .breadcrumb .breadcrumb-item a:focus {
-  color: #FA6400; 
-}
-.breadcrumb-area .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  color:#BAC3CD;
-  font-family: 'icomoon';
-  font-size: 13px;
-  content: "\e92a"; 
-}
-
 
 /*
  * Content Area 
@@ -2069,17 +2014,6 @@ ul.the-icons {
   
   nav .breadcrumb {
     vertical-align: middle;
-  }
-  .breadcrumb-area .breadcrumb .breadcrumb-item {
-    font-size: 16px; 
-  }
-  
-  .breadcrumb-area .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-    font-size: 8px;
-  }
-
-  .breadcrumb-area hr {
-    margin-top: 10px;
   }
 
   .hcs-tab-area h2, .hcs-tab-area h3 {

@@ -1203,7 +1203,7 @@ hr {
 .hcs-card-item {
   display: block;
   /* width: 30%; */
-  height: 300px;
+  min-height: 300px;
   position: relative;
   overflow: hidden;
   z-index: 9;
@@ -1221,6 +1221,9 @@ hr {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+}
+.hcs-card-item.en {
+  min-height: 390px;
 }
 .hcs-card-item.has-text figure {
   margin-bottom: 30px !important;

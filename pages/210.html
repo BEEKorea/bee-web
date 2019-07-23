@@ -24,7 +24,9 @@
 		<!-- Flexslider -->
 		<link rel="stylesheet" href="/css/flexslider.css">
 		<!-- Theme style  -->
-		<link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <!-- Dynamic Tab style  -->
+        <link rel="stylesheet" href="/css/bootstrap-dynamic-tabs.css">
 
 
 		<!-- jQuery -->
@@ -55,7 +57,7 @@
 				$("#hcs-nav").load("/nav.html");
 				$("#hcs-footer").load("/footer.html");
 			});
-            $("#mytabs").bootstrapDynamicTabs();
+            // $("#mytabs").bootstrapDynamicTabs();
 		</script>
 		<!-- Modernizr JS -->
 		<script src="/js/modernizr-2.6.2.min.js"></script>
@@ -164,7 +166,9 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-
+    <script type="text/javascript">
+        $("#mytabs").bootstrapDynamicTabs();
+    </script>
 </body>
 
 </html>

@@ -926,12 +926,12 @@ hr {
 }
 
 .breadcrumb-area .breadcrumb .breadcrumb-item.active {
-  text-decoration-line: underline;
+  text-decoration: underline;
   text-decoration-style: double;
 }
 
 .breadcrumb-area .breadcrumb .breadcrumb-item.active::before {
-  text-decoration-line: none;
+  text-decoration: none;
 }
 
 /*

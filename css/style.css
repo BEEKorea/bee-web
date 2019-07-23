@@ -894,6 +894,37 @@ hr {
 .no-border { border: 0; }
 .no-radius { border-radius: 0; }
 
+
+/*  
+ * Breadcumb Area
+ */
+
+ .breadcrumb-area {
+  position: relative;
+  z-index: 10;
+  width: 100%; 
+}
+
+.breadcrumb-area .hcs-heading {
+  margin-top: 36px;
+}
+
+.breadcrumb-area .hcs-heading h2{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 38px;
+  margin-bottom: 0px;
+  line-height: 1.5;
+  color: #FA6400;
+  /* position: relative; */
+}
+
+.breadcrumb-area .breadcrumb {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  background-color: transparent; 
+}
+
 /*
  * gototop
  */

@@ -925,14 +925,11 @@ hr {
   background-color: transparent; 
 }
 
-.breadcrumb-area .breadcrumb .breadcrumb-item.active {
+.breadcrumb-area .breadcrumb .breadcrumb-item.active p {
   text-decoration-line: underline;
   text-decoration-style: double;
 }
 
-.breadcrumb > li + li.active:before {
-  text-decoration-line: none;
-}
 
 /*
  * gototop

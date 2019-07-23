@@ -925,13 +925,13 @@ hr {
   background-color: transparent; 
 }
 
-.breadcrumb-area .breadcrumb .breadcrumb-item.active {
-  text-decoration: underline;
+.breadcrumb-area .breadcrumb .breadcrumb-item {
+  text-decoration-line: underline;
   text-decoration-style: double;
 }
 
-.breadcrumb-area .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  text-decoration: none !important;
+.breadcrumb > li + li.active:before {
+  text-decoration-line: none;
 }
 
 /*

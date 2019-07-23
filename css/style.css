@@ -925,7 +925,7 @@ hr {
   background-color: transparent; 
 }
 
-.breadcrumb-area .breadcrumb .breadcrumb-item {
+.breadcrumb-area .breadcrumb .breadcrumb-item.active {
   text-decoration-line: underline;
   text-decoration-style: double;
 }

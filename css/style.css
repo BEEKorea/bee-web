@@ -930,8 +930,8 @@ hr {
   text-decoration-style: double;
 }
 
-.breadcrumb-area .breadcrumb .breadcrumb-item.active::before {
-  text-decoration: none;
+.breadcrumb-area .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  text-decoration: none !important;
 }
 
 /*

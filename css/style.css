@@ -430,6 +430,12 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #BAC3CD;
   font-weight: 600; 
 }
+
+.breadcrumb-area .breadcrumb .breadcrumb-item.active {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
 .breadcrumb-area .breadcrumb .breadcrumb-item a {
   color: #4A4A4A;
   font-weight: 600; 
@@ -443,6 +449,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 13px;
   content: "\e92a"; 
 }
+
 
 /*
  * Content Area 

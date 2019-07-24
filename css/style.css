@@ -1411,7 +1411,26 @@ hr {
   margin-bottom: 0px;
 }
 
+/*
+ * Sitemap
+ */
+.sitemap01 > li {
+  overflow: hidden;
+  background: url(/images/bg_circle_line.png) no-repeat 0 2px;
+  float: left;
+  padding-left: 20px;
+  margin-bottom: 60px;
+  height: 650px;
+  width: 172px;
+}
 
+.sitemap01 h3 {
+  color: #ff6540;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
 
 /*
  * map-area

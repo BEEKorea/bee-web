@@ -1411,6 +1411,12 @@ hr {
   margin-bottom: 0px;
 }
 
+@media (min-width: 992px) {
+  #hcs-imenu .col-md-2_5 {
+    width: 18%;
+  }
+}
+
 /*
  * map-area
  */

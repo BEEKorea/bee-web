@@ -1414,7 +1414,7 @@ hr {
 /*
  * Sitemap
  */
-.sitemap01 > li {
+.sitemap > li {
   overflow: hidden;
   background: url(/images/bg_circle_line.png) no-repeat 0 2px;
   float: left;
@@ -1424,7 +1424,7 @@ hr {
   width: 172px;
 }
 
-.sitemap01 h3 {
+.sitemap h3 {
   color: #ff6540;
   font-size: 18px;
   font-weight: bold;

@@ -1420,8 +1420,8 @@ hr {
   float: left;
   padding-left: 20px;
   margin-bottom: 60px;
-  height: 650px;
-  width: 172px;
+  /* height: 650px; */
+  /* width: 172px; */
 }
 
 .sitemap h3 {

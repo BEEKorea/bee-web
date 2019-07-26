@@ -461,6 +461,12 @@ h1, h2, h3, h4, h5, h6, figure {
   height : 210px;
 }
 
+.content-area .book-cover.left-crop{
+  max-width: 140px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+
 .content-area p,  .content-area ul li {
   font-family: "Noto Sans KR Light", sans-serif;
   /* padding-top: 26px; */

@@ -1354,6 +1354,7 @@ hr {
   margin: 5px;
 }
 
+
 .notices {
   padding: 30px 20px 20px 20px;
   margin-bottom: 0;
@@ -2236,15 +2237,6 @@ ul.the-icons {
   padding: 10px 30px !important;
 }
 
-.hcs-cards .col-md-4 {
-  width: 100% !important;
-  margin: 0px !important; 
-}
-
-.hcs-cards .col-md-3 {
-  width: 100% !important;
-  margin: 0px !important; 
-}
 
 .breadcrumb-area .hcs-heading {
   margin-top: 16px;

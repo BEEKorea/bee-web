@@ -1211,9 +1211,7 @@ hr {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.hcs-card-item.en {
-  min-height: 390px;
-}
+
 .hcs-card-item.has-text figure {
   margin-bottom: 30px !important;
 }
@@ -2149,9 +2147,6 @@ ul.the-icons {
     
   }
 
-  .hcs-card-item.en {
-    min-height: auto;
-  }
 
 /* }
 

@@ -466,7 +466,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .content-area .book-cover.left-crop img{
-  margin-left: 105%;
+  margin-left: -105%;
   width:200%;
 }
 

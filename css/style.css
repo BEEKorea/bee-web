@@ -1354,6 +1354,10 @@ hr {
   margin: 5px;
 }
 
+.hcs-cards .col-md-6 {
+  width: 48%;
+  margin: 5px;
+}
 
 .notices {
   padding: 30px 20px 20px 20px;

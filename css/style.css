@@ -462,9 +462,12 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .content-area .book-cover.left-crop{
-  max-width: 140px;
-  overflow: hidden;
-  text-indent: -100%;
+  overflow-x: hidden;
+}
+
+.content-area .book-cover.left-crop img{
+  margin-left: 105%;
+  width:200%;
 }
 
 .content-area p,  .content-area ul li {

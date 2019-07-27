@@ -1453,12 +1453,12 @@ hr {
   margin-top: 1em;
 }
 
-.sitemap .col-md-3,.col-md-4,.col-md-6{
+.sitemap .col-md-3, .sitemap  .col-md-4, .sitemap  .col-md-6{
   border-left: 1px solid #ccc;
   padding-right:13px;
 }
 
-.sitemap .col-md-3:first-child {
+.sitemap .col-md-3:first-child, .sitemap .col-md-4:first-child, .sitemap .col-md-6:first-child {
   border: none;
 }
 

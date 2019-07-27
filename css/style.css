@@ -463,7 +463,9 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .content-area .book-cover.left-crop{
   overflow-x: hidden;
-  max-width: 140px;
+  max-width: 160px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 .content-area .book-cover.left-crop img{

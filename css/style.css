@@ -1453,6 +1453,10 @@ hr {
   margin-top: 1em;
 }
 
+.sitemap a {
+  color: gray !important;
+}
+
 .sitemap .col-md-3, .sitemap  .col-md-4, .sitemap  .col-md-6{
   border-left: 1px solid #ccc;
   padding-right:13px;

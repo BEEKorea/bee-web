@@ -450,7 +450,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 140px;
 }
 
-.content-area .empty-cover, .content-area .book-cover img {
+.content-area .empty-cover, .content-area .book-cover img, .content-area .book-cover.left-crop img {
   border-radius: 5px;
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
   margin: 0 auto;
@@ -463,6 +463,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .content-area .book-cover.left-crop{
   overflow-x: hidden;
+  max-width: 140px;
 }
 
 .content-area .book-cover.left-crop img{

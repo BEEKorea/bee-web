@@ -1449,11 +1449,11 @@ hr {
  * Sitemap
  */
 .sitemap {
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   margin-top: 1em;
 }
 
-.sitemap .col-md-3 {
+.sitemap .col-md-3,.col-md-4,.col-md-6{
   border-left: 1px solid #ccc;
   padding-right:13px;
 }

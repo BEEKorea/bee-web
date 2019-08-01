@@ -2275,8 +2275,9 @@ nav .breadcrumb {
   vertical-align: middle;
 }
 
-.breadcrumb-area .hcs-heading h2{
-  font-size: 26px;  
+.breadcrumb-area .hcs-heading h2,
+.content-area .hcs-heading h2, .content-area .hcs-heading.en h2{
+  font-size: 28px;  
 }
 
 .breadcrumb-area .breadcrumb .breadcrumb-item {

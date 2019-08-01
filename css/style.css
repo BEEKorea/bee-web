@@ -1943,7 +1943,7 @@ ul.the-icons {
 
 
 @media screen and (max-width: 1133px) {
-    body {
+  body {
     padding: 0;
   }
 
@@ -2044,10 +2044,6 @@ ul.the-icons {
 
   .breadcrumb-area .hcs-heading {
     margin-top: 16px;
-  }
-
-  .breadcrumb-area .breadcrumb {
-    padding-top: 0px;
   }
 
   .content-area img{
@@ -2191,130 +2187,6 @@ ul.the-icons {
     min-height: auto;
   }
 
-/* }
-
-
-@media screen and (max-width: 1133px) { */
-  body {
-  padding: 0;
-}
-
-.hcs-page {
-  padding-right: 10px;
-}
-
-.hcs-new-nav {
-  padding: 0px 0;
-}
-
-.megamenu> li .dropdown-header , .megamenu> li > ul {
-  font-size: 14px !important;
-}
-
-.hcs-heading p {
-  font-size: 18px;
-}
-
-/*
-* Navigation
-*/
-#hcs-new-nav-items > ul > li > a {
-  font-size: 18px;
-  padding: 10px 14px;
-}
-
-.hcs-new-nav #hcs-logo {
-  padding-top: 0px;
-}
-
-.hcs-new-nav #hcs-logo img{
-  width: 170px;
-  height: 31px;
-}
-
-.hcs-new-nav #hcs-main-btn {
-  max-height: 50px;
-  font-size: 18px;
-  margin-top: 10px;
-  margin-left: 10px;
-  padding: 3px 7px !important;
-}
-
-/*
-* hcs-hero
-*/
-#hcs-hero .flexslider .slider-text {
-  width: 100%;
-}
-#hcs-hero .flexslider .slides li .overlay {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-#hcs-hero .flexslider .slider-text > .slider-btn-inner {
-  display: none;
-}
-
-#hcs-hero .flexslider .slider-text > .slider-text-inner {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#hcs-hero .flexslider .slider-text > .slider-text-inner h2 {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 30px;
-  margin: 20px auto;
-  color: #fff;
-}
-#hcs-hero .flexslider .slider-text > .slider-text-inner p {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #fff;
-  width: 50%;
-  margin: 20px auto;
-}
-
-#hcs-hero .btn.btn-primary {
-  font-size: 20px;
-  padding: 10px 30px !important;
-}
-
-
-.breadcrumb-area .hcs-heading {
-  margin-top: 16px;
-}
-
-.breadcrumb-area .hcs-heading h2,
-.content-area .hcs-heading h2, .content-area .hcs-heading.en h2 {
-  font-size: 28px;
-}
-
-.breadcrumb-area .breadcrumb {
-  padding-top: 0px;
-}
-
-.content-area img{
-  width: 80%;
-}
-
-#hcs-footer .hcs-banners{
-  text-align: left;
-  padding: 0px;
-}
-#hcs-footer .hcs-banners li {
-  display: inline;
-  margin-right: 10px;
-  text-align: left;  
-}
-
-#hcs-footer .hcs-info .info {
-  margin-top: 20px;
-}
-
-#hcs-footer .hcs-social-icons {
-  margin: 0;
-  padding: 10px 10px 0 0;
-}
 }
 
 
@@ -2455,8 +2327,4 @@ nav .breadcrumb {
 
 }
 
-@media (min-width: 992px) {
-  #hcs-imenu .col-md-2_5 {
-    width: 20%;
-  }
 }

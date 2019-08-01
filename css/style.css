@@ -622,15 +622,15 @@ h1, h2, h3, h4, h5, h6, figure {
  * hcs-table
  */
 .hcs-table .main{
-  font-size: 18px;
+  /* font-size: 18px; */
   color: #FA6400;
 }
 
-
+/* 
 .hcs-table .main.en{
   font-size: 16px;
   color: #FA6400;
-}
+} */
 
 .hcs-table .main.en td:first-child{
   width:160px;

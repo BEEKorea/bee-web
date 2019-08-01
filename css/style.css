@@ -2109,6 +2109,8 @@ ul.the-icons {
     vertical-align: middle;
   }
 
+
+
   .hcs-tab-area h2, .hcs-tab-area h3 {
     /* padding: 20px; */
     position: relative;
@@ -2272,6 +2274,11 @@ ul.the-icons {
 nav .breadcrumb {
   vertical-align: middle;
 }
+
+.breadcrumb-area .hcs-heading h2{
+  font-size: 26px;  
+}
+
 .breadcrumb-area .breadcrumb .breadcrumb-item {
   font-size: 16px; 
 }

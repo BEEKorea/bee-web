@@ -2284,6 +2284,11 @@ ul.the-icons {
   margin-top: 16px;
 }
 
+.breadcrumb-area .hcs-heading h2,
+.content-area .hcs-heading h2, .content-area .hcs-heading.en h2 {
+  font-size: 24px;
+}
+
 .breadcrumb-area .breadcrumb {
   padding-top: 0px;
 }

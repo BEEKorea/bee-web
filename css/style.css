@@ -2037,6 +2037,11 @@ ul.the-icons {
     margin: 0px !important; 
   }
 
+  .hcs-cards .col-md-6 {
+    width: 100% !important;
+    margin: 0px !important; 
+  }
+
   .breadcrumb-area .hcs-heading {
     margin-top: 16px;
   }

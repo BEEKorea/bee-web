@@ -2222,6 +2222,10 @@ ul.the-icons {
     display: block;
     
   }
+
+  .breadcrumb-area .breadcrumb {
+    padding-top: 10px;
+  }
 }
 
 
@@ -2327,4 +2331,3 @@ nav .breadcrumb {
 
 }
 
-}

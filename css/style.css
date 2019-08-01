@@ -680,7 +680,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #0E1D28;
   min-height: 225px;
   color: #fff;
-  padding: 66px 0px;
+  /* padding: 66px 0px; */
   text-align: left;
   font-size: 16px;
 }
@@ -2090,10 +2090,7 @@ ul.the-icons {
     margin-bottom: 0px;
   }
 
-  #hcs-footer, .hcs-info {
-    padding: 30px 10px !important;
-  }
-  
+
   .hcs-imenu-p {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 16px;
@@ -2251,9 +2248,6 @@ ul.the-icons {
   margin-bottom: 0px;
 }
 
-#hcs-footer, .hcs-info {
-  padding: 30px 10px !important;
-}
 
 .hcs-imenu-p {
   font-family: 'Noto Sans KR', sans-serif;

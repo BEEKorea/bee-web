@@ -1466,12 +1466,6 @@ hr {
   border: none;
 }
 
-@media screen and (max-width: 1330px) {
-  .sitemap .col-md-3 {
-    border:none;
-  }
-}
-
 /*
  * map-area
  */
@@ -2050,6 +2044,9 @@ ul.the-icons {
     width: 80%;
   }
 
+  #hcs-footer {
+    padding-left: 10px !important;
+  }
   #hcs-footer .hcs-banners{
     text-align: left;
     padding: 0px;
@@ -2183,6 +2180,11 @@ ul.the-icons {
   .hcs-card-item.en {
     min-height: auto;
   }
+
+  .sitemap .col-md-3 {
+    border:none;
+  }
+
 
 }
 

@@ -348,7 +348,7 @@ $(document).ready(function() {
 
 function drawNoticeTable(result) {
 	for(data of result) {
-		var mUrl = "/lms/new_board/detail/${data.id}/";
+		var mUrl = "/lms/new_board/detail/" + data.id + "/";
 		$("#notice_table").append('<tr><td> <a href="' + mUrl + '">' + data.subject + '</a></td></tr>');
 	}
 }

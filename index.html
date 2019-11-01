@@ -351,7 +351,7 @@ $(document).ready(function() {
 		type: 'GET',
 		contentType: "application/json",
 		dataType: 'json',
-		url: '/lms/photo_board_api/',
+		url: '/lms/newsletter_board_api/',
 		success : function(result){
 			// d.key;
 			console.log('Sucess: ' + result);
@@ -372,7 +372,7 @@ function drawNoticeTable(result) {
 
 function drawBeeSuTable(result) {
 	for(data of result) {
-		var mUrl = "/lms/new_board/detail/" + data.id + "/";
+		var mUrl = "/lms/newsletter_board/detail/" + data.id + "/";
 		$("#notice_table").append('<tr><td> <a href="' + mUrl + '">' + data.subject + '</a></td></tr>');
 	}
 }

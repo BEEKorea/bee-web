@@ -182,7 +182,7 @@
 						</div>
 						<div class="tagline col-md-3 hcs-card-item notices">
 							<div class="feature-left">
-								<h3>공지사항</h3>
+								<h3>항</h3>
 								<a href="/pages/400.html"><img class="pull-right" src="/images/more.png"></a>
 							</div>
 							<div class="hcs-table">
@@ -340,12 +340,22 @@ $(document).ready(function() {
 		success : function(result){
 			// d.key;
 			console.log('Sucess: ' + result);
+			drawNoticeTable(result);
 		},
 		error : function(err){
 			console.log('Error: ' + err);
 		}
 	});
 });
+
+function drawNoticeTable(result) {
+	var row = $("<tr />");
+	$("#notice_table").append(row);
+	for(var i = 0; i < result.length; i++) {
+		row.append($("<td>" + result.subject + "</td>"));
+	}
+}
+//notice_table
 </script>
 
 </html>

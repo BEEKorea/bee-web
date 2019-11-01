@@ -187,7 +187,6 @@
 							</div>
 							<div class="hcs-table">
 								<table class="table " id="notice_table">
-								
 								</table>
 							</div>
 						</div>
@@ -198,7 +197,7 @@
 							</div>
 							<div class="hcs-table">
 								<table class="table " id="beesu_table">
-									
+									<tbody></tbody>
 								</table>
 							</div>
 						</div>
@@ -349,11 +348,22 @@ $(document).ready(function() {
 });
 
 function drawNoticeTable(result) {
-	var row = $("<tr />");
-	$("#notice_table").append(row);
-	for(var i = 0; i < result.length; i++) {
-		row.append($("<td>" + result.subject + "</td>"));
+	// var row = $("<tr />");
+	// $("#notice_table").append(row);
+	// for(data of result) {
+	// 	row.append($("<td>" + data.subject + "</td>"));
+	// }
+	for(data of result) {
+		$("#notice_table").append('<tr><td>' + data.subject + '</td></tr>');
 	}
+	// $("#notice_table").find('tbody')
+	// .append($('<tr>')
+    //     .append($('<td>')
+    //         .append($('<img>')
+    //             .attr('src', 'img.png')
+    //             .text('Image cell')
+    //         )
+    //     )
 }
 //notice_table
 </script>

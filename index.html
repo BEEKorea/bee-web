@@ -373,7 +373,7 @@ function drawNoticeTable(result) {
 function drawBeeSuTable(result) {
 	for(data of result) {
 		var mUrl = "/lms/newsletter_board/detail/" + data.id + "/";
-		$("#notice_table").append('<tr><td> <a href="' + mUrl + '">' + data.subject + '</a></td></tr>');
+		$("#beesu_table").append('<tr><td> <a href="' + mUrl + '">' + data.subject + '</a></td></tr>');
 	}
 }
 //notice_table

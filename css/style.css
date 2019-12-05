@@ -133,9 +133,15 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .hcs-new-nav .hcs-prem ul {
+  width: 228px;
   padding: 0;
   margin: 2px 0 0 0;
 }
+
+.hcs-new-nav .hcs-prem ul.en {
+  width: 152px;
+}
+
 .hcs-new-nav .hcs-prem ul li {
   padding: 0px;
   margin: 0;
@@ -1976,10 +1982,12 @@ ul.the-icons {
   }
 
   .hcs-new-nav #hcs-main-btn {
+    width: 200px;
     max-height: 50px;
     font-size: 18px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* margin-left: 10px; */
     padding: 3px 7px !important;
   }
 
@@ -2068,7 +2076,7 @@ ul.the-icons {
   }
 
   .hcs-new-nav .hcs-prem  ul li, .hcs-new-nav .hcs-prem  ul li a{
-    padding: 0px 5px;
+    /* padding: 0px 5px; */
     color: #40434A !important;
     font-size: 14px !important; 
     font-family: 'Roboto Light', sans-serif;
@@ -2193,7 +2201,9 @@ ul.the-icons {
 
 
 @media  screen and (max-width: 960px) {
-
+  .hcs-new-nav .hcs-prem ul, .hcs-new-nav .hcs-prem ul.en {
+    width: auto;
+  }
   .megamenu{
     width: 100% !important;
     margin-left: 0 ;
@@ -2232,8 +2242,9 @@ ul.the-icons {
 
 
 @media screen and  (max-width: 760px) {
+
 .hcs-new-nav .hcs-prem  ul li, .hcs-new-nav .hcs-prem  ul li a{
-  padding: 0px 5px;
+  /* padding: 0px 5px; */
   color: #40434A !important;
   font-size: 14px !important; 
   font-family: 'Roboto Light', sans-serif;

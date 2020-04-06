@@ -364,14 +364,16 @@ $(document).ready(function() {
 });
 
 function drawNoticeTable(result) {
-	for(data of result) {
+	for(var i = 0; i < result.length; i++) {
+		var data = result[i];
 		var mUrl = "/lms/new_board/detail/" + data.id + "/";
 		$("#notice_table").append('<tr><td> <a href="' + mUrl + '" target="_blank">' + data.subject + '</a></td></tr>');
 	}
 }
 
 function drawBeeSuTable(result) {
-	for(data of result) {
+	for(var i = 0; i < result.length; i++) {
+		var data = result[i];
 		var mUrl = "/lms/newsletter_board/detail/" + data.id + "/";
 		$("#beesu_table").append('<tr><td> <a href="' + mUrl + '" target="_blank">' + data.subject + '</a></td></tr>');
 	}

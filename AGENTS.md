@@ -32,3 +32,4 @@
 
 ## Agent-Specific Notes
 - Korean shorthands understood: “푸쉬” (deploy), “되돌려” (revert). You can also say “열어봐 <경로>”, “수정해줘 <설명>”, “새 파일 만들어 <경로>”, “삭제해 <경로>`”.
+- Language: Any user-facing questions and final summaries must be in Korean.

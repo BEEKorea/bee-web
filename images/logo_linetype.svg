@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">BEE Korea Logo (Line Type)</title>
+  <desc id="desc">Circular line emblem with crossing ellipses, a sweeping underline and the text BEE KOREA.</desc>
+  <!-- Emblem -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer circle -->
+    <ellipse cx="60" cy="40" rx="26" ry="26"/>
+    <!-- Vertical ellipse -->
+    <ellipse cx="60" cy="40" rx="16" ry="26"/>
+    <!-- Diagonal ellipses -->
+    <ellipse cx="60" cy="40" rx="26" ry="12" transform="rotate(30 60 40)"/>
+    <ellipse cx="60" cy="40" rx="26" ry="12" transform="rotate(-30 60 40)"/>
+  </g>
+
+  <!-- Underline arc -->
+  <path d="M8 68 C 32 92, 88 92, 112 68" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <!-- Accent at right tip -->
+  <path d="M104 73 C 108 72, 111 70, 114 67" fill="none" stroke="#74A9FF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Text -->
+  <text x="60" y="110" text-anchor="middle" font-family="'Noto Sans KR','Montserrat','Roboto','Arial',sans-serif" font-weight="700" font-size="14" fill="#FFFFFF" letter-spacing="1">
+    BEE KOREA
+  </text>
+</svg>
+

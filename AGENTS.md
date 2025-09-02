@@ -1,34 +1,34 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- Root HTML: `index.html` (production), `index_local.html` (local preview).
-- Shared partials: `nav.html`, `footer.html` (and English versions under `en/`).
-- Pages: Korean under `pages/NNN.html`, English under `en/pages/NNN.html`. Use `_base.html` as a reference template.
-- Assets: CSS in `css/`, JS in `js/`, images in `images/`, fonts in `fonts/`, vendor theme in `bootstrap4/`, videos in `videos/`.
+- Root: `index.html` (production), shared partials `nav.html`, `footer.html` (English under `en/`).
+- Pages: Korean in `pages/NNN.html`, English in `en/pages/NNN.html` (use `_base.html` as a template reference).
+- Assets: CSS `css/`, JS `js/`, images `images/`, fonts `fonts/`, vendor theme `bootstrap4/`, videos `videos/`.
 
-## Build, Test, and Development Commands
-- Serve locally: `python3 -m http.server 8000` then open `http://localhost:8000/index_local.html`.
-- Quick preview: open `index_local.html` directly in a browser (AJAX sections may not load).
-- Deploy (manual): commit and push to `master`. Example:
-  - `git add -A && git commit -m "Update page 207 content" && git push origin master`
+## Workflow: Production Updates & Reverts
+- Production-first: changes are pushed directly to production; no local run required.
+- 푸쉬: stage all changes, commit, and push to `origin/master`.
+  - Example: `git add -A && git commit -m "홈페이지 문구 수정" && git push origin master`
+  - If no message is given, use a concise, descriptive one from the diff.
+- 되돌려: revert production to the previous state.
+  - Last commit: `git revert HEAD && git push origin master`
+  - Specific commit: `git log --oneline` → copy hash → `git revert <hash> && git push origin master`
+- Guardrails: avoid modifying vendor files (`bootstrap4/`, minified assets) unless intentional.
 
 ## Coding Style & Naming Conventions
-- HTML/CSS/JS: 2-space indentation, UTF-8, LF line endings.
-- File naming: lowercase with hyphens, e.g., `images/banner-4.png`. For numbered pages, follow `pages/###.html` and mirror in `en/pages/###.html`.
-- Paths: production uses root-relative (`/css/...`); local uses relative (`./css/...`) as shown in `index_local.html`.
-- Keep vendor files untouched (`bootstrap4/`, minified assets). Edit site-specific styles in `css/style.css` and scripts in `js/script.js` or `js/main.js`.
+- HTML/CSS/JS with 2-space indent, UTF-8, LF endings.
+- File names lowercase-with-hyphens, e.g., `images/banner-4.png`.
+- Numbered pages follow `pages/###.html` and mirror in `en/pages/###.html` when applicable.
+- Site styles in `css/style.css`; site scripts in `js/script.js` or `js/main.js`.
 
 ## Testing Guidelines
-- Manual checks: load pages, verify navigation/footers, image links, and AJAX-powered sections (`/lms/*` tables on the home page).
-- Responsive review: test at mobile, tablet, and desktop breakpoints.
-- Accessibility basics: ensure link text is descriptive and images have `alt`.
+- After 푸쉬, manually verify the live site: header/footer includes, images/links, and home page AJAX tables (`/lms/*`).
+- Quick responsive spot-check at mobile, tablet, desktop.
+- Basic accessibility: meaningful link text; images include `alt`.
 
 ## Commit & Pull Request Guidelines
-- Commits: small, focused, imperative mood. Include path hints, e.g., `pages: update 206.html schedule`.
-- PRs: include a clear summary, affected paths, before/after screenshots, and any linked issues. Note if both KR and EN pages were updated.
-- Do not reformat vendor files or unrelated pages.
+- Commits: small, focused, imperative mood; include path hints (e.g., `pages: update 206.html schedule`). Korean messages are welcome.
+- PRs are optional; if used, include summary, affected paths, and screenshots for visible changes. Note KR/EN parity when relevant.
 
-## Security & Configuration Tips
-- Prefer `https` for external resources; avoid leaking test endpoints in production pages.
-- When adding new sections to the home page, ensure both `nav.html`/`footer.html` and their `en/` counterparts remain in sync.
-
+## Agent-Specific Notes
+- Korean shorthands understood: “푸쉬” (deploy), “되돌려” (revert). You can also say “열어봐 <경로>”, “수정해줘 <설명>”, “새 파일 만들어 <경로>”, “삭제해 <경로>`”.

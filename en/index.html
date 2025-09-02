@@ -51,8 +51,9 @@
 		
 		<script type="text/javascript">
 			$(document).ready( function() {
-				$("#hcs-nav").load("/en/nav.html");
-				$("#hcs-footer").load("/en/footer.html");
+				var v = 'v=20250902-1';
+				$("#hcs-nav").load("/en/nav.html?" + v);
+				$("#hcs-footer").load("/en/footer.html?" + v);
 			});
 		</script>
 		<!-- Modernizr JS -->

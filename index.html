@@ -49,8 +49,9 @@
 		
 		<script type="text/javascript">
 			$(document).ready( function() {
-				$("#hcs-nav").load("/nav.html");
-				$("#hcs-footer").load("/footer.html");
+				var v = 'v=20250902-1';
+				$("#hcs-nav").load("/nav.html?" + v);
+				$("#hcs-footer").load("/footer.html?" + v);
 			});
 		</script>
 		<!-- Modernizr JS -->

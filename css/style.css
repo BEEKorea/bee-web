@@ -1055,21 +1055,21 @@ hr {
 }
 
 .btn-success {
-  background: #5cb85c;
+  background: #7cd67c;
   color: #fff;
-  border: 2px solid #5cb85c;
+  border: 2px solid #7cd67c;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active {
-  background: #4cae4c !important;
-  border-color: #4cae4c !important;
+  background: #6bc66b !important;
+  border-color: #6bc66b !important;
 }
 .btn-success.btn-outline {
   background: transparent;
-  color: #5cb85c;
-  border: 2px solid #5cb85c;
+  color: #7cd67c;
+  border: 2px solid #7cd67c;
 }
 .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
-  background: #5cb85c;
+  background: #7cd67c;
   color: #fff;
 }
 
@@ -2349,4 +2349,3 @@ nav .breadcrumb {
 }
 
 }
-

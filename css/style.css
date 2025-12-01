@@ -1661,6 +1661,18 @@ hr {
   color: #fff !important;
 }
 
+/* Login button refinements */
+#hcs-login-btn {
+  font-size: 13px;
+  font-weight: 400;
+  color: #f57c00;
+}
+
+#hcs-login-btn:hover,
+#hcs-login-btn:focus {
+  color: #fff !important;
+}
+
 
 /*
  * about-us

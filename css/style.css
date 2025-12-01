@@ -1647,6 +1647,20 @@ hr {
   float: right !important;
 }
 
+.chatgpt-btn {
+  border: 1px solid #f57c00;
+  color: #f57c00;
+  background-color: transparent;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.chatgpt-btn:hover,
+.chatgpt-btn:focus {
+  background-color: #f57c00;
+  color: #fff !important;
+}
+
 
 /*
  * about-us

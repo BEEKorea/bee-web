@@ -1649,33 +1649,33 @@ hr {
 
 .chatgpt-btn {
   border: 1px solid #f57c00;
-  color: #f57c00;
-  background-color: transparent;
+  color: #fff;
+  background-color: #f57c00;
   font-weight: 600;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .chatgpt-btn:hover,
 .chatgpt-btn:focus {
-  background-color: #f57c00;
-  color: #fff !important;
+  background-color: transparent;
+  color: #f57c00 !important;
 }
 
 /* Login button refinements */
 #hcs-login-btn {
   border: 1px solid #f57c00;
-  background-color: transparent;
+  background-color: #f57c00;
   font-size: 13px;
   font-weight: 400;
-  color: #f57c00 !important;
+  color: #fff !important;
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 #hcs-login-btn:hover,
 #hcs-login-btn:focus {
-  background-color: #f57c00;
+  background-color: transparent;
   border-color: #f57c00;
-  color: #fff !important;
+  color: #f57c00 !important;
 }
 
 

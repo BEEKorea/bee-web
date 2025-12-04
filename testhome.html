@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEE Korea — 말씀으로 세계로</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #004aad;
+      --accent-color: #ffc107;
+      --dark-overlay: rgba(0, 0, 0, 0.6);
+      --bg-light: #f8f9fa;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: 0.3s;
+    }
+
+    a:hover { color: var(--primary-color); }
+
+    .navbar {
+      transition: all 0.4s ease;
+      background-color: transparent;
+      padding: 20px 0;
+    }
+
+    .navbar.scrolled {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+    }
+
+    .navbar-brand {
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .navbar.scrolled .navbar-brand { color: var(--primary-color); }
+
+    .nav-link {
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-weight: 500;
+    }
+
+    .navbar.scrolled .nav-link { color: #333 !important; }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=2673&auto=format&fit=crop') no-repeat center center/cover;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0, 74, 173, 0.8), rgba(0, 0, 0, 0.6));
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+
+    .btn-custom {
+      background: var(--accent-color);
+      color: #000;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: bold;
+      border: none;
+      transition: transform 0.2s;
+    }
+
+    .btn-custom:hover {
+      transform: translateY(-3px);
+      background: #ffca2c;
+      color: #000;
+    }
+
+    .info-section {
+      padding: 80px 0;
+      background-color: var(--bg-light);
+      margin-top: -80px;
+      position: relative;
+      z-index: 3;
+    }
+
+    .glass-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      height: 100%;
+      transition: transform 0.3s;
+      border-top: 5px solid var(--primary-color);
+    }
+
+    .glass-card:hover { transform: translateY(-5px); }
+
+    .card-title {
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+      color: var(--primary-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .table-borderless td {
+      padding: 8px 0;
+      border: none;
+    }
+
+    .date-badge {
+      background: #eee;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      margin-right: 8px;
+    }
+
+    .menu-grid { padding: 80px 0; background: #fff; }
+
+    .menu-item {
+      text-align: center;
+      padding: 30px;
+      border-radius: 20px;
+      transition: all 0.3s;
+      border: 1px solid #eee;
+      background: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-item:hover {
+      box-shadow: 0 15px 40px rgba(0, 74, 173, 0.15);
+      border-color: var(--primary-color);
+      transform: translateY(-5px);
+    }
+
+    .menu-icon {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+
+    .menu-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .gallery-section { padding: 80px 0; background: #111; color: #fff; }
+
+    .gallery-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 0.8;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery-img:hover {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+
+    .gpt-section {
+      background: linear-gradient(45deg, #10a37f, #0d8a6a);
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      padding: 40px 0;
+      font-size: 0.9rem;
+    }
+
+    footer h5 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">BEE KOREA</a>
+      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div id="hcs-nav-placeholder"></div>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/pages/008.html">선교안내</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/200.html">과목소개</a></li>
+          <li class="nav-item"><a class="nav-link" href="/pages/101.html">온비아</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+      <h1>말씀으로 세계로</h1>
+      <p>Training Leaders Where They Are.<br>이동식 신학교 BEE Korea와 함께 열방을 섬기십시오.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="/pages/008.html" class="btn btn-custom">BEE 소개 보기</a>
+        <a href="/pages/101.html" class="btn btn-outline-light rounded-pill px-4 py-2">온비아 바로가기</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="info-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card">
+            <div class="card-title">
+              <span><i class="fa-solid fa-hands-praying"></i> 기도모임</span>
+            </div>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <strong>(토) 06:30</strong><br>
+                <span class="text-muted small">온누리교회 서빙고 한동홀 / 양재 비전홀B</span>
+              </li>
+              <li class="mb-3">
+                <strong>(월) 09:30</strong><br>
+                <span class="text-muted small">온누리교회 서빙고 4층 누리홀</span>
+              </li>
+              <li>
+                <strong>(화) 14:00</strong><br>
+                <span class="text-muted small">온누리교회 서빙고 신관 202호</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card">
+            <div class="card-title">
+              <span><i class="fa-solid fa-bullhorn"></i> 공지사항</span>
+              <a href="/lms/new_board/" target="_blank" class="small text-muted"><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <table class="table table-borderless" id="notice_table">
+              <tr><td><span class="text-muted">로딩중...</span></td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="glass-card">
+            <div class="card-title">
+              <span><i class="fa-solid fa-cloud-rain"></i> 비오는 수요일</span>
+              <a href="/lms/newsletter_board/" target="_blank" class="small text-muted"><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <table class="table table-borderless" id="beesu_table">
+              <tr><td><span class="text-muted">로딩중...</span></td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-grid">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h6 class="text-primary fw-bold">MINISTRY & ACADEMY</h6>
+        <h2>사역 바로가기</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+          <a href="/pages/008.html" class="menu-item">
+            <i class="fa-solid fa-globe menu-icon"></i>
+            <div class="menu-title">선교안내</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="200">
+          <a href="/pages/200.html" class="menu-item">
+            <i class="fa-solid fa-book-bible menu-icon"></i>
+            <div class="menu-title">과목소개</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+          <a href="/pages/101.html" class="menu-item">
+            <i class="fa-solid fa-graduation-cap menu-icon"></i>
+            <div class="menu-title">온비아</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="400">
+          <a href="/pages/300.html" class="menu-item">
+            <i class="fa-solid fa-hand-holding-heart menu-icon"></i>
+            <div class="menu-title">후원하기</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="500">
+          <a href="/pages/301.html" class="menu-item">
+            <i class="fa-solid fa-users menu-icon"></i>
+            <div class="menu-title">라구</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="600">
+          <a href="/pages/217.html" class="menu-item">
+            <i class="fa-solid fa-play-circle menu-icon"></i>
+            <div class="menu-title">홍보영상</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gpt-section" data-aos="fade-up">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8 text-md-start text-center mb-3 mb-md-0">
+          <h3 class="fw-bold"><i class="fa-solid fa-robot"></i> 궁금한 점이 있으신가요?</h3>
+          <p class="mb-0">BEE Korea의 사역에 대해 AI에게 무엇이든 물어보세요.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="https://chatgpt.com/g/g-692d292310fc8191b16b6984cc463aa8-bee-korea" target="_blank" class="btn btn-light rounded-pill px-4 fw-bold text-success">ChatGPT에게 묻기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2>Field Stories</h2>
+        <p class="text-muted">세계 곳곳에서 일어나는 BEE Korea의 사역 현장</p>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4 col-6" data-aos="fade-up"><img src="/images/gallery_1.jpg" alt="Activity" class="gallery-img"></div>
+        <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="100"><img src="/images/gallery_2.jpg" alt="Activity" class="gallery-img"></div>
+        <div class="col-md-4 col-6" data-aos="fade-up" data-aos-delay="200"><img src="/images/gallery_3.jpg" alt="Activity" class="gallery-img"></div>
+        <div class="col-md-3 col-6" data-aos="fade-up"><img src="/images/gallery_5.jpg" alt="Activity" class="gallery-img"></div>
+        <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100"><img src="/images/gallery_6.jpg" alt="Activity" class="gallery-img"></div>
+        <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200"><img src="/images/gallery_7.jpg" alt="Activity" class="gallery-img"></div>
+        <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300"><img src="/images/gallery_8.jpg" alt="Activity" class="gallery-img"></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="hcs-footer"></div>
+  <footer class="text-center">
+    <div class="container">
+      <p>BEE Korea &copy; 2025. All Rights Reserved. <br> 말씀으로 세계로 나아가는 BEE Korea</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 100
+    });
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) {
+        $('.navbar').addClass('scrolled');
+      } else {
+        $('.navbar').removeClass('scrolled');
+      }
+    });
+
+    $(document).ready(function() {
+      var v = 'v=20250902-1';
+      $("#hcs-nav-placeholder").load("/nav.html?" + v);
+      $("#hcs-footer").load("/footer.html?" + v);
+    });
+
+    $(document).ready(function() {
+      $.ajax({
+        type: 'GET',
+        contentType: "application/json",
+        dataType: 'json',
+        url: '/lms/new_board_api/api/new_board/',
+        success: function(result) {
+          drawNoticeTable(result, "#notice_table");
+        },
+        error: function() {
+          console.log('Notice API Error');
+        }
+      });
+
+      $.ajax({
+        type: 'GET',
+        contentType: "application/json",
+        dataType: 'json',
+        url: '/lms/newsletter_board_api/',
+        success: function(result) {
+          drawNoticeTable(result, "#beesu_table");
+        },
+        error: function() {
+          console.log('Newsletter API Error');
+        }
+      });
+    });
+
+    function drawNoticeTable(result, selector) {
+      $(selector).empty();
+      var limit = result.length > 5 ? 5 : result.length;
+
+      for (var i = 0; i < limit; i++) {
+        var data = result[i];
+        var baseUrl = selector === "#notice_table" ? "/lms/new_board/detail/" : "/lms/newsletter_board/detail/";
+        var mUrl = baseUrl + data.id + "/";
+
+        $(selector).append(
+          '<tr><td><a href="' + mUrl + '" target="_blank" class="text-dark text-decoration-none"><i class="fa-solid fa-angle-right text-primary me-2 small"></i>' + data.subject + '</a></td></tr>'
+        );
+      }
+    }
+  </script>
+</body>
+</html>

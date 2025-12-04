@@ -62,6 +62,18 @@
 
     .navbar.scrolled .nav-link { color: #333 !important; }
 
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar.scrolled .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2851,51,51,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
     .hero {
       position: relative;
       height: 100vh;
@@ -241,7 +253,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <div id="hcs-nav-placeholder"></div>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="/pages/008.html">선교안내</a></li>
           <li class="nav-item"><a class="nav-link" href="/pages/200.html">과목소개</a></li>
@@ -416,12 +427,6 @@
       } else {
         $('.navbar').removeClass('scrolled');
       }
-    });
-
-    $(document).ready(function() {
-      var v = 'v=20250902-1';
-      $("#hcs-nav-placeholder").load("/nav.html?" + v);
-      $("#hcs-footer").load("/footer.html?" + v);
     });
 
     $(document).ready(function() {

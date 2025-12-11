@@ -14,8 +14,8 @@
 
 ## Workflow: Production Updates & Reverts
 - Production-first: changes are pushed directly to production; no local run required.
-- 푸쉬: stage all changes, commit, and push to `origin/master`.
-  - Example: `git add -A && git commit -m "홈페이지 문구 수정" && git push origin master`
+- 푸쉬: stage all changes, commit, and push to `origin master`.
+  - Example: `git add -A && git commit -m "홈페이지 문구 수정" && git push`
   - If no message is given, use a concise, descriptive one from the diff.
 - 되돌려: revert production to the previous state.
   - Last commit: `git revert HEAD && git push origin master`

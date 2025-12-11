@@ -94,7 +94,7 @@ This project uses GitHub Pages for automatic deployment.
    ```
 4. Push to GitHub:
    ```bash
-   git push github master
+   git push origin master
    ```
 
 **한국어:**
@@ -123,7 +123,7 @@ This project uses GitHub Pages for automatic deployment.
    ```
 4. GitHub에 푸시합니다:
    ```bash
-   git push github master
+   git push origin master
    ```
 
 ### Automatic Deployment / 자동 배포
@@ -140,30 +140,20 @@ This project uses GitHub Pages for automatic deployment.
 - 배포에는 1-2분이 소요됩니다
 - 배포 상태 확인: [GitHub Actions](https://github.com/BEEKorea/bee-web/actions)
 
-## Remote Repositories / 원격 저장소
-
-This project is synced with two remote repositories:
-
-이 프로젝트는 두 개의 원격 저장소와 동기화됩니다:
+## Remote Repository / 원격 저장소
 
 **English:**
 
-- `github` - GitHub (used for deployment via GitHub Pages)
-- `origin` - AWS CodeCommit (original repository)
-
-For deployments, only push to GitHub:
+This project is hosted on GitHub and deployed via GitHub Pages:
 ```bash
-git push github master
+git push origin master
 ```
 
 **한국어:**
 
-- `github` - GitHub (GitHub Pages를 통한 배포에 사용)
-- `origin` - AWS CodeCommit (원본 저장소)
-
-배포의 경우 GitHub에만 푸시합니다:
+이 프로젝트는 GitHub에서 호스팅되며 GitHub Pages를 통해 배포됩니다:
 ```bash
-git push github master
+git push origin master
 ```
 
 ## Common Tasks / 일반적인 작업

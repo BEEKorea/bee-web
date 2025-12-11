@@ -70,6 +70,21 @@ This project uses GitHub Pages for automatic deployment.
 
 **English:**
 
+**Primary Workflow (AI-Assisted):**
+
+1. Open Claude Code in this directory:
+   ```bash
+   claude
+   ```
+2. Instruct Claude to make the desired changes. Examples:
+   - "Update the footer to say 'All rights reserved!'"
+   - "Add a new page about our programs"
+   - "Change the banner image on the homepage"
+3. Claude will edit files, commit changes, and push to GitHub automatically
+4. Verify deployment at https://beekorea.org after 1-2 minutes
+
+**Alternative Workflow (Manual):**
+
 1. Edit files locally using your preferred editor
 2. Test locally by opening `index.html` in your browser (optional)
 3. Commit your changes:
@@ -83,6 +98,21 @@ This project uses GitHub Pages for automatic deployment.
    ```
 
 **한국어:**
+
+**주요 워크플로우 (AI 지원):**
+
+1. 이 디렉토리에서 Claude Code를 실행합니다:
+   ```bash
+   claude
+   ```
+2. Claude에게 원하는 변경사항을 지시합니다. 예시:
+   - "푸터를 'All rights reserved!'로 업데이트해줘"
+   - "프로그램에 대한 새 페이지를 추가해줘"
+   - "홈페이지 배너 이미지를 변경해줘"
+3. Claude가 파일을 편집하고 변경사항을 커밋하고 GitHub에 자동으로 푸시합니다
+4. 1-2분 후 https://beekorea.org 에서 배포를 확인합니다
+
+**대체 워크플로우 (수동):**
 
 1. 선호하는 편집기로 로컬에서 파일을 편집합니다
 2. 브라우저에서 `index.html`을 열어 로컬에서 테스트합니다 (선택사항)

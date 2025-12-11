@@ -77,9 +77,9 @@ This project uses GitHub Pages for automatic deployment.
    claude
    ```
 2. Instruct Claude to make the desired changes. Examples:
-   - "Update the footer to say 'All rights reserved!'"
-   - "Add a new page about our programs"
-   - "Change the banner image on the homepage"
+   - "Update the prayer meeting time from 9:30am to 10:00am on Monday"
+   - "Change the banner text '말씀으로 세계로' to include the new tagline"
+   - "Add a new banner slide for our upcoming intensive program"
 3. Claude will edit files, commit changes, and push to GitHub automatically
 4. Verify deployment at https://beekorea.org after 1-2 minutes
 
@@ -106,9 +106,9 @@ This project uses GitHub Pages for automatic deployment.
    claude
    ```
 2. Claude에게 원하는 변경사항을 지시합니다. 예시:
-   - "푸터를 'All rights reserved!'로 업데이트해줘"
-   - "프로그램에 대한 새 페이지를 추가해줘"
-   - "홈페이지 배너 이미지를 변경해줘"
+   - "월요일 기도모임 시간을 오전 9:30에서 10:00으로 수정해줘"
+   - "배너 텍스트 '말씀으로 세계로'에 새로운 태그라인을 추가해줘"
+   - "다가오는 집중 프로그램을 위한 새 배너 슬라이드를 추가해줘"
 3. Claude가 파일을 편집하고 변경사항을 커밋하고 GitHub에 자동으로 푸시합니다
 4. 1-2분 후 https://beekorea.org 에서 배포를 확인합니다
 

@@ -20,13 +20,13 @@ HTML, CSS, JavaScript로 구축된 정적 웹사이트입니다. 스타일링에
 
 This repository serves the main website at `www.beekorea.org` (or `beekorea.org`) via GitHub Pages. The static content (HTML, CSS, JavaScript, images) is hosted and delivered from this repository.
 
-The Learning Management System (LMS) at `www.beekorea.org/lms` is served by a separate server and is not part of this repository. The static site includes links and AJAX calls to `/lms/*` endpoints that connect to the external LMS server.
+The Learning Management System (LMS) is hosted on a separate subdomain (`lms.beekorea.org`) and is not part of this repository. The static site includes links and AJAX calls to the LMS backend, with the URL configured in `js/config.js`.
 
 **한국어:**
 
 이 저장소는 GitHub Pages를 통해 `www.beekorea.org` (또는 `beekorea.org`)의 메인 웹사이트를 제공합니다. 정적 콘텐츠(HTML, CSS, JavaScript, 이미지)는 이 저장소에서 호스팅되고 제공됩니다.
 
-`www.beekorea.org/lms`의 학습 관리 시스템(LMS)은 별도의 서버에서 제공되며 이 저장소의 일부가 아닙니다. 정적 사이트에는 외부 LMS 서버에 연결되는 `/lms/*` 엔드포인트로의 링크와 AJAX 호출이 포함되어 있습니다.
+학습 관리 시스템(LMS)은 별도의 서브도메인(`lms.beekorea.org`)에서 호스팅되며 이 저장소의 일부가 아닙니다. 정적 사이트에는 LMS 백엔드에 연결되는 링크와 AJAX 호출이 포함되어 있으며, URL은 `js/config.js`에서 설정됩니다.
 
 ## Project History / 프로젝트 역사
 
@@ -215,13 +215,13 @@ git push github master
 **English:**
 
 - **Language parity**: If you update Korean content, consider updating the English version in `en/`
-- **LMS integration**: The site includes links to `/lms/*` which connects to a separate Learning Management System
+- **LMS integration**: The site connects to a separate LMS backend. The URL is configured in `js/config.js` via `CONFIG.LMS_BASE_URL`. Update this file to switch between environments (canary vs production).
 - **Cache busting**: The nav/footer includes version parameters to ensure fresh content loads
 
 **한국어:**
 
 - **언어 동등성**: 한국어 콘텐츠를 업데이트하는 경우 `en/`의 영어 버전도 업데이트하는 것을 고려하세요
-- **LMS 통합**: 사이트에는 별도의 학습 관리 시스템에 연결되는 `/lms/*` 링크가 포함되어 있습니다
+- **LMS 통합**: 사이트는 별도의 LMS 백엔드에 연결됩니다. URL은 `js/config.js`의 `CONFIG.LMS_BASE_URL`에서 설정됩니다. 환경(canary vs production)을 전환하려면 이 파일을 수정하세요.
 - **캐시 무효화**: nav/footer에는 새로운 콘텐츠가 로드되도록 버전 매개변수가 포함되어 있습니다
 
 ## Additional Resources / 추가 리소스

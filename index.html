@@ -27,6 +27,8 @@
 		<link rel="stylesheet" href="/css/style.css">
 
 
+		<!-- Site Configuration -->
+		<script src="/js/config.js"></script>
 		<!-- jQuery -->
 		<script src="/js/jquery.min.js"></script>
 		<!-- jQuery Easing -->
@@ -184,7 +186,7 @@
 						<div class="tagline col-md-3 hcs-card-item notices">
 							<div class="feature-left">
 								<h3>공지사항</h3>
-								<a href="/lms/new_board/" target="_blank"><img class="pull-right" src="/images/more.png"></a>
+								<a id="notice_more_link" href="#" target="_blank"><img class="pull-right" src="/images/more.png"></a>
 							</div>
 							<div class="hcs-table">
 								<table class="table " id="notice_table">
@@ -194,7 +196,7 @@
 						<div class="tagline col-md-3 hcs-card-item notices">
 							<div class="feature-left">
 								<h3>비오는 수요일</h3>
-								<a href="/lms/newsletter_board/" target="_blank"><img class="pull-right" src="/images/more.png"></a>
+								<a id="beesu_more_link" href="#" target="_blank"><img class="pull-right" src="/images/more.png"></a>
 							</div>
 							<div class="hcs-table">
 								<table class="table " id="beesu_table">
@@ -345,31 +347,33 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
+	// Set "more" links using config
+	$('#notice_more_link').attr('href', CONFIG.LMS_BASE_URL + '/new_board/');
+	$('#beesu_more_link').attr('href', CONFIG.LMS_BASE_URL + '/newsletter_board/');
+
+	// Fetch notices
 	$.ajax({
 		type: 'GET',
 		contentType: "application/json",
 		dataType: 'json',
-		url: '/lms/new_board_api/api/new_board/',
+		url: CONFIG.LMS_BASE_URL + '/new_board_api/api/new_board/',
 		success : function(result){
-			// d.key;
-			console.log('Sucess: ' + result);
+			console.log('Success: ' + result);
 			drawNoticeTable(result);
 		},
 		error : function(err){
 			console.log('Error: ' + err);
 		}
 	});
-});
 
-$(document).ready(function() {
+	// Fetch newsletter (비오는 수요일)
 	$.ajax({
 		type: 'GET',
 		contentType: "application/json",
 		dataType: 'json',
-		url: '/lms/newsletter_board_api/',
+		url: CONFIG.LMS_BASE_URL + '/newsletter_board_api/',
 		success : function(result){
-			// d.key;
-			console.log('Sucess: ' + result);
+			console.log('Success: ' + result);
 			drawBeeSuTable(result);
 		},
 		error : function(err){
@@ -381,7 +385,7 @@ $(document).ready(function() {
 function drawNoticeTable(result) {
 	for(var i = 0; i < result.length; i++) {
 		var data = result[i];
-		var mUrl = "/lms/new_board/detail/" + data.id + "/";
+		var mUrl = CONFIG.LMS_BASE_URL + "/new_board/detail/" + data.id + "/";
 		$("#notice_table").append('<tr><td> <a href="' + mUrl + '" target="_blank">' + data.subject + '</a></td></tr>');
 	}
 }
@@ -389,11 +393,10 @@ function drawNoticeTable(result) {
 function drawBeeSuTable(result) {
 	for(var i = 0; i < result.length; i++) {
 		var data = result[i];
-		var mUrl = "/lms/newsletter_board/detail/" + data.id + "/";
+		var mUrl = CONFIG.LMS_BASE_URL + "/newsletter_board/detail/" + data.id + "/";
 		$("#beesu_table").append('<tr><td> <a href="' + mUrl + '" target="_blank">' + data.subject + '</a></td></tr>');
 	}
 }
-//notice_table
 </script>
 
 </html>
